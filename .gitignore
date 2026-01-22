@@ -1,0 +1,315 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Node
+node_modules/
+npm-debug.log
+
+# Tailwind
+src/app.css.map
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Redis
+dump.rdb
+# Composer
+/vendor/
+composer.phar
+composer.lock
+
+# PHPUnit
+.phpunit.result.cache
+phpunit.xml
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Logs & temp
+*.log
+*.cache
+*.tmp
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+*.tgz
+*.tar.gz
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE & OS
+.idea/
+.vscode/
+*.sublime-*
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# AI Agents & Development Tools
+###############################
+
+# Anthropic Claude
+.claude/
+.claude/*
+.clauderc
+.claude_config.json
+CLAUDE.md
+AGENTS.md
+claude_instructions.md
+.claude-history
+*.claude
+
+# OpenAI
+.openai/
+.openai/*
+.openai_config.json
+openai_instructions.md
+*.openai
+
+# Cursor/Bluesky AI
+.cursor/
+.cursor/*
+cursorrules
+.cursorrules
+.cursor-rules
+
+# VSCode AI Extensions
+.vscode/ai/
+.vscode/ai/*
+.vscode/copilot*
+.vscode/chatgpt*
+.vscode/claude*
+
+# GitHub Copilot
+.copilot/
+.copilot/*
+copilot_instructions.md
+.github/copilot*
+
+# General AI/LLM files
+*.ai_instructions
+*.agent_instructions
+*.llm_instructions
+.ai_context/
+.ai_context/*
+ai_settings.json
+agent_config.json
+llm_config.json
+
+# AI-generated code
+ai_generated/
+ai_generated/*
+.generated/
+.generated/*
+__ai_generated__/
+__pycache__/ai/
+
+# AI Prompts & Context
+.prompts/
+.prompts/*
+prompt_history.json
+conversation_history.json
+context_cache/
+
+
+# JetBrains AI Assistant
+.idea/ai/
+.idea/ai/*
+.idea/llm/
+.idea/copilot*
+
+# Cline/DevGPT
+.cline/
+.cline/*
+.dev_gpt/
+
+# Continue.dev
+.continue/
+.continue/*
+continue_config.json
+
+# Tabnine
+.tabnine/
+.tabnine/*
+tabnine_config.json
+
+# Codeium
+.codeium/
+.codeium/*
+codeium_config.json
+
+# Sourcegraph Cody
+.cody/
+.cody/*
+cody.json
+
+# Windsurf
+.windsurf/
+.windsurf/*
+windsurf_config.json
+
+# Bolt.new
+.bolt/
+.bolt/*
+
+# AI Model Files & Caches
+##########################
+.model_cache/
+.model_cache/*
+.embedding_cache/
+.vector_store/
+vector_store.json
+embeddings.db
+*.gguf
+*.bin
+*.safetensors
+
+# AI Project Specific
+######################
+.aiignore
+.agentignore
+.llmignore
+agents/
+agents/*
+!agents/README.md
+.agents/
+.agents/*
+.ai_agents/
+.ai_agents/*
+workspace/
+workspace/*
+
+# Temporary AI files
+*.ai_temp
+*.agent_temp
+*.llm_temp
+.temp_ai/
+.temp_ai/*
+
+# Sensitive AI Configurations
+##############################
+# Never commit API keys or sensitive configs
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.key
+*.pem
+secrets.yaml
+secrets.yml
+secrets.json
+config.local.json
+api_keys.json
+
+# IDE/Editor AI extensions
+##########################
+.vscode/settings.json.ai
+.vscode/extensions.json.ai
+.idea/workspace.xml.ai
+*.code-workspace.ai
+
+# Common patterns to include
+############################
+*_backup
+*_temp
+*_test
+*_experiment
+demo_*
+example_*
+sandbox_*
+scratch_*
+plans/
+
+# Documentation with AI context
+###############################
+README.ai.md
+CONTRIBUTING.ai.md
+SETUP.ai.md
+*.ai.md
+*.agent.md
+*.llm.md
