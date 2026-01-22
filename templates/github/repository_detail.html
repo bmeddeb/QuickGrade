@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ repository.full_name }} - QuickGrade{% endblock %}
+{% block page_id %}github-repo-detail{% endblock %}
+{% block header_subtitle %}{{ repository.full_name }}{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+  <div class="flex items-center gap-2 text-sm text-[var(--paper-muted)] mb-2">
+    <a href="{% url 'github:dashboard' %}" class="hover:text-[var(--paper-primary)]">GitHub</a>
+    <i class="nc-icon nc-minimal-right text-xs"></i>
+    <span>{{ repository.full_name }}</span>
+  </div>
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[#24292e] text-white">
+        <i class="fa fa-github text-xl"></i>
+      </div>
+      <div>
+        <h1 class="text-2xl font-semibold">{{ repository.full_name }}</h1>
+        <p class="text-[var(--paper-muted)]">
+          {% if repository.description %}{{ repository.description }}{% else %}No description{% endif %}
+        </p>
+      </div>
+    </div>
+    <a href="{{ repository.url }}" target="_blank" rel="noopener" class="paper-btn paper-btn-outline">
+      <i class="fa fa-external-link mr-2"></i>
+      View on GitHub
+    </a>
+  </div>
+</div>
+
+<!-- Stats Cards -->
+<div class="grid gap-6 md:grid-cols-4 mb-8">
+  <div class="paper-card p-6">
+    <div class="flex items-center justify-between">
+      <div>
+        <p class="text-sm text-[var(--paper-muted)]">Commits</p>
+        <p class="text-3xl font-bold mt-1">{{ commit_count }}</p>
+      </div>
+      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--paper-info)]/10 text-[var(--paper-info)]">
+        <i class="fa fa-code-fork text-xl"></i>
+      </div>
+    </div>
+    <a href="{% url 'github:repository_commits' repository.id %}" class="text-sm text-[var(--paper-primary)] mt-3 block">
+      View all <i class="nc-icon nc-minimal-right text-xs"></i>
+    </a>
+  </div>
+
+  <div class="paper-card p-6">
+    <div class="flex items-center justify-between">
+      <div>
+        <p class="text-sm text-[var(--paper-muted)]">Pull Requests</p>
+        <p class="text-3xl font-bold mt-1">{{ pr_count }}</p>
+      </div>
+      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--paper-success)]/10 text-[var(--paper-success)]">
+        <i class="fa fa-code-pull-request text-xl"></i>
+      </div>
+    </div>
+    <a href="{% url 'github:repository_prs' repository.id %}" class="text-sm text-[var(--paper-primary)] mt-3 block">
+      View all <i class="nc-icon nc-minimal-right text-xs"></i>
+    </a>
+  </div>
+
+  <div class="paper-card p-6">
+    <div class="flex items-center justify-between">
+      <div>
+        <p class="text-sm text-[var(--paper-muted)]">Issues</p>
+        <p class="text-3xl font-bold mt-1">{{ issue_count }}</p>
+      </div>
+      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--paper-warning)]/10 text-[var(--paper-warning)]">
+        <i class="fa fa-exclamation-circle text-xl"></i>
+      </div>
+    </div>
+    <a href="{% url 'github:repository_issues' repository.id %}" class="text-sm text-[var(--paper-primary)] mt-3 block">
+      View all <i class="nc-icon nc-minimal-right text-xs"></i>
+    </a>
+  </div>
+
+  <div class="paper-card p-6">
+    <div class="flex items-center justify-between">
+      <div>
+        <p class="text-sm text-[var(--paper-muted)]">Collaborators</p>
+        <p class="text-3xl font-bold mt-1">{{ collaborator_count }}</p>
+      </div>
+      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--paper-primary)]/10 text-[var(--paper-primary)]">
+        <i class="fa fa-users text-xl"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Repository Info -->
+<div class="grid gap-6 lg:grid-cols-2">
+  <div class="paper-card p-6">
+    <h2 class="text-lg font-semibold mb-4">Repository Info</h2>
+    <dl class="space-y-3 text-sm">
+      <div class="flex justify-between">
+        <dt class="text-[var(--paper-muted)]">Default Branch</dt>
+        <dd class="font-mono">{{ repository.default_branch }}</dd>
+      </div>
+      <div class="flex justify-between">
+        <dt class="text-[var(--paper-muted)]">Visibility</dt>
+        <dd>{% if repository.is_private %}Private{% else %}Public{% endif %}</dd>
+      </div>
+      <div class="flex justify-between">
+        <dt class="text-[var(--paper-muted)]">Last Fetched</dt>
+        <dd>{{ repository.last_fetched_at|date:"M d, Y H:i" }}</dd>
+      </div>
+      <div class="flex justify-between">
+        <dt class="text-[var(--paper-muted)]">Fetch Status</dt>
+        <dd class="{% if repository.fetch_status == 'success' %}text-[var(--paper-success)]{% elif repository.fetch_status == 'failed' %}text-[var(--paper-danger)]{% endif %}">
+          {{ repository.get_fetch_status_display }}
+        </dd>
+      </div>
+    </dl>
+  </div>
+
+  <div class="paper-card p-6">
+    <h2 class="text-lg font-semibold mb-4">Code Analysis</h2>
+    {% if repository.file_analyses.exists %}
+    <dl class="space-y-3 text-sm">
+      <div class="flex justify-between">
+        <dt class="text-[var(--paper-muted)]">Files Analyzed</dt>
+        <dd>{{ repository.file_analyses.count }}</dd>
+      </div>
+    </dl>
+    <a href="{% url 'github:repository_analysis' repository.id %}" class="text-sm text-[var(--paper-primary)] mt-4 block">
+      View Analysis <i class="nc-icon nc-minimal-right text-xs"></i>
+    </a>
+    {% else %}
+    <p class="text-sm text-[var(--paper-muted)]">No code analysis data available.</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

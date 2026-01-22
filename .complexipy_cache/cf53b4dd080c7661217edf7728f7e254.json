@@ -1,0 +1,181 @@
+{
+  "functions": [
+    {
+      "complexity": 0,
+      "file_name": "led_effect.py",
+      "function_name": "colorArray::__getslice__",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "led_effect.py",
+      "function_name": "colorArray::__len__",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "led_effect.py",
+      "function_name": "colorArray::padLeft",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "led_effect.py",
+      "function_name": "colorArray::padRight",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "led_effect.py",
+      "function_name": "colorArray::reverse",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "led_effect.py",
+      "function_name": "ledEffect::_handle_shutdown",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "led_effect.py",
+      "function_name": "ledEffect::adcCallback",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "led_effect.py",
+      "function_name": "ledEffect::set_fade_time",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "led_effect.py",
+      "function_name": "ledFrameHandler::__init__",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "led_effect.py",
+      "function_name": "ledFrameHandler::_handle_ready",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "led_effect.py",
+      "function_name": "load_config",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "led_effect.py",
+      "function_name": "load_config_prefix",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "led_effect.py",
+      "function_name": "colorArray::__setitem__",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "led_effect.py",
+      "function_name": "ledEffect::__init__",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "led_effect.py",
+      "function_name": "ledEffect::set_enabled",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "led_effect.py",
+      "function_name": "ledFrameHandler::_pollProgress",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "led_effect.py",
+      "function_name": "ledFrameHandler::_rgb_to_rgbw",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "led_effect.py",
+      "function_name": "colorArray::shift",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "led_effect.py",
+      "function_name": "ledFrameHandler::_getColorData",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "led_effect.py",
+      "function_name": "ledFrameHandler::_pollHeater",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "led_effect.py",
+      "function_name": "ledFrameHandler::cmd_STOP_LED_EFFECTS",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "led_effect.py",
+      "function_name": "ledEffect::cmd_SET_LED_EFFECT",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "led_effect.py",
+      "function_name": "ledFrameHandler::_pollStepper",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "led_effect.py",
+      "function_name": "colorArray::__getitem__",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "led_effect.py",
+      "function_name": "ledFrameHandler::_handle_shutdown",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 9,
+      "file_name": "led_effect.py",
+      "function_name": "ledFrameHandler::addEffect",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 23,
+      "file_name": "led_effect.py",
+      "function_name": "ledEffect::getFrame",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 23,
+      "file_name": "led_effect.py",
+      "function_name": "ledFrameHandler::_getFrames",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    },
+    {
+      "complexity": 50,
+      "file_name": "led_effect.py",
+      "function_name": "ledEffect::_handle_ready",
+      "path": "qg_bmeddeb_klipper-led_effect_oc77z3p2/src/led_effect.py"
+    }
+  ],
+  "targets": [
+    "/private/tmp/quickgrade_clones/qg_bmeddeb_klipper-led_effect_oc77z3p2"
+  ]
+}

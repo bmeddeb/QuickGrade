@@ -41,7 +41,7 @@ class GitHubAPIClient:
                 "Accept": "application/vnd.github.v3+json",
                 "X-GitHub-Api-Version": "2022-11-28",
             },
-            timeout=30.0,
+            timeout=httpx.Timeout(60.0, connect=10.0),  # 60s total, 10s connect
         )
         return self
 
@@ -222,7 +222,15 @@ async def fetch_all_api_data(
     Fetch all API data for a repository.
     Returns dict with all fetched data.
     """
+
+    def report(detail: str):
+        logger.info(f"[{owner}/{repo}] {detail}")
+        if progress_callback:
+            progress_callback({"stage": "fetching_api", "detail": detail})
+
     async with GitHubAPIClient(token) as client:
+        report("Fetching repo info, collaborators, branches...")
+
         # Fetch in parallel where possible
         repo_info, collaborators, branches = await asyncio.gather(
             client.fetch_repository(owner, repo),
@@ -237,14 +245,13 @@ async def fetch_all_api_data(
 
         # Convert exceptions to empty lists
         if isinstance(collaborators, Exception):
-            logger.warning(f"Failed to fetch collaborators: {collaborators}")
+            logger.warning(f"[{owner}/{repo}] Failed to fetch collaborators: {collaborators}")
             collaborators = []
         if isinstance(branches, Exception):
-            logger.warning(f"Failed to fetch branches: {branches}")
+            logger.warning(f"[{owner}/{repo}] Failed to fetch branches: {branches}")
             branches = []
 
-        if progress_callback:
-            progress_callback({"stage": "fetching_api", "detail": "PRs and issues"})
+        report(f"Got {len(collaborators)} collaborators, {len(branches)} branches. Fetching PRs...")
 
         # Fetch PRs and issues
         pull_requests, issues = await asyncio.gather(
@@ -254,44 +261,59 @@ async def fetch_all_api_data(
         )
 
         if isinstance(pull_requests, Exception):
-            logger.warning(f"Failed to fetch PRs: {pull_requests}")
+            logger.warning(f"[{owner}/{repo}] Failed to fetch PRs: {pull_requests}")
             pull_requests = []
         if isinstance(issues, Exception):
-            logger.warning(f"Failed to fetch issues: {issues}")
+            logger.warning(f"[{owner}/{repo}] Failed to fetch issues: {issues}")
             issues = []
 
-        if progress_callback:
-            progress_callback({"stage": "fetching_api", "detail": "reviews and comments"})
+        report(f"Got {len(pull_requests)} PRs, {len(issues)} issues. Fetching reviews...")
 
-        # Fetch reviews for all PRs (parallel)
+        # Fetch reviews for all PRs (parallel, but in batches to avoid overwhelming)
         pr_reviews = {}
         if pull_requests:
-            review_tasks = [
-                client.fetch_pr_reviews(owner, repo, pr["number"])
-                for pr in pull_requests
-            ]
-            review_results = await asyncio.gather(*review_tasks, return_exceptions=True)
-            for pr, reviews in zip(pull_requests, review_results):
-                if isinstance(reviews, Exception):
-                    logger.warning(f"Failed to fetch reviews for PR#{pr['number']}: {reviews}")
-                    pr_reviews[pr["number"]] = []
-                else:
-                    pr_reviews[pr["number"]] = reviews
+            batch_size = 10
+            for i in range(0, len(pull_requests), batch_size):
+                batch = pull_requests[i:i + batch_size]
+                report(f"Fetching reviews for PRs {i+1}-{min(i+batch_size, len(pull_requests))} of {len(pull_requests)}...")
+
+                review_tasks = [
+                    client.fetch_pr_reviews(owner, repo, pr["number"])
+                    for pr in batch
+                ]
+                review_results = await asyncio.gather(*review_tasks, return_exceptions=True)
+
+                for pr, reviews in zip(batch, review_results):
+                    if isinstance(reviews, Exception):
+                        logger.warning(f"[{owner}/{repo}] Failed to fetch reviews for PR#{pr['number']}: {reviews}")
+                        pr_reviews[pr["number"]] = []
+                    else:
+                        pr_reviews[pr["number"]] = reviews
+
+        report(f"Fetching comments for {len(issues)} issues...")
 
         # Fetch comments for issues (parallel)
         issue_comments = {}
         if issues:
-            comment_tasks = [
-                client.fetch_issue_comments(owner, repo, issue["number"])
-                for issue in issues
-            ]
-            comment_results = await asyncio.gather(*comment_tasks, return_exceptions=True)
-            for issue, comments in zip(issues, comment_results):
-                if isinstance(comments, Exception):
-                    logger.warning(f"Failed to fetch comments for Issue#{issue['number']}: {comments}")
-                    issue_comments[issue["number"]] = []
-                else:
-                    issue_comments[issue["number"]] = comments
+            batch_size = 10
+            for i in range(0, len(issues), batch_size):
+                batch = issues[i:i + batch_size]
+                report(f"Fetching comments for issues {i+1}-{min(i+batch_size, len(issues))} of {len(issues)}...")
+
+                comment_tasks = [
+                    client.fetch_issue_comments(owner, repo, issue["number"])
+                    for issue in batch
+                ]
+                comment_results = await asyncio.gather(*comment_tasks, return_exceptions=True)
+
+                for issue, comments in zip(batch, comment_results):
+                    if isinstance(comments, Exception):
+                        logger.warning(f"[{owner}/{repo}] Failed to fetch comments for Issue#{issue['number']}: {comments}")
+                        issue_comments[issue["number"]] = []
+                    else:
+                        issue_comments[issue["number"]] = comments
+
+        report(f"API fetch complete. Rate limit remaining: {client.rate_limit_remaining}")
 
         return {
             "repository": repo_info,

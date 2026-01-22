@@ -1,0 +1,793 @@
+{
+  "functions": [
+    {
+      "complexity": 0,
+      "file_name": "upload_extra_script.py",
+      "function_name": "print_error",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/HAL/LPC1768/upload_extra_script.py"
+    },
+    {
+      "complexity": 75,
+      "file_name": "upload_extra_script.py",
+      "function_name": "before_upload",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/HAL/LPC1768/upload_extra_script.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "file2cpp.py",
+      "function_name": "deflate",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/file2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "font2cpp.py",
+      "function_name": "WriteSource::__init__",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/font2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "font2cpp.py",
+      "function_name": "WriteSource::add_pixel",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/font2cpp.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "font2cpp.py",
+      "function_name": "WriteSource::convert_to_4bpp",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/font2cpp.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "font2cpp.py",
+      "function_name": "WriteSource::end_row",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/font2cpp.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "font2cpp.py",
+      "function_name": "WriteSource::write",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/font2cpp.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "font2cpp.py",
+      "function_name": "pack_rle",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/font2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "img2cpp.py",
+      "function_name": "WriteSource::__init__",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/img2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "img2cpp.py",
+      "function_name": "WriteSource::append_grayscale",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/img2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "img2cpp.py",
+      "function_name": "WriteSource::append_rgb332",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/img2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "img2cpp.py",
+      "function_name": "WriteSource::append_rgb565",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/img2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "img2cpp.py",
+      "function_name": "WriteSource::deflate",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/img2cpp.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "img2cpp.py",
+      "function_name": "WriteSource::add_bits_to_byte",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/img2cpp.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "img2cpp.py",
+      "function_name": "WriteSource::end_row",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/img2cpp.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "img2cpp.py",
+      "function_name": "WriteSource::finish_byte",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/img2cpp.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "img2cpp.py",
+      "function_name": "WriteSource::write",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/img2cpp.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "img2cpp.py",
+      "function_name": "WriteSource::add_pixel",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/img2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "svg2cpp.py",
+      "function_name": "ComputeBoundingBox::path_finished",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "svg2cpp.py",
+      "function_name": "ComputeBoundingBox::reset",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "svg2cpp.py",
+      "function_name": "ComputeBoundingBox::scale",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "svg2cpp.py",
+      "function_name": "ComputeBoundingBox::write",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "svg2cpp.py",
+      "function_name": "Parser::__init__",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "svg2cpp.py",
+      "function_name": "Parser::reset",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "svg2cpp.py",
+      "function_name": "WriteDataStructure::__init__",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "svg2cpp.py",
+      "function_name": "WriteDataStructure::push",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "svg2cpp.py",
+      "function_name": "WriteDataStructure::reset",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "svg2cpp.py",
+      "function_name": "ComputeBoundingBox::command",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "svg2cpp.py",
+      "function_name": "Parser::eat_token",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "svg2cpp.py",
+      "function_name": "Parser::process_svg_path_L_or_M",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "svg2cpp.py",
+      "function_name": "WriteDataStructure::command",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "svg2cpp.py",
+      "function_name": "WriteDataStructure::path_finished",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "svg2cpp.py",
+      "function_name": "ComputeBoundingBox::from_svg_view_box",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "svg2cpp.py",
+      "function_name": "Parser::process_svg_paths",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "svg2cpp.py",
+      "function_name": "Parser::process_svg_path_data_cmd",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 34,
+      "file_name": "svg2cpp.py",
+      "function_name": "Parser::process_svg_path_data",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/Marlin/src/lcd/extui/ftdi_eve_touch_ui/ftdi_eve_lib/scripts/svg2cpp.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "STM32F103RC_MEEB_3DP.py",
+      "function_name": "after_upload",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/STM32F103RC_MEEB_3DP.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "STM32F103RC_MEEB_3DP.py",
+      "function_name": "before_upload",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/STM32F103RC_MEEB_3DP.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "chitu_crypt.py",
+      "function_name": "encrypt",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/chitu_crypt.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "chitu_crypt.py",
+      "function_name": "calculate_crc",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/chitu_crypt.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "chitu_crypt.py",
+      "function_name": "xor_block",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/chitu_crypt.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "chitu_crypt.py",
+      "function_name": "encrypt_file",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/chitu_crypt.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "common-cxxflags.py",
+      "function_name": "add_cpu_freq",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/common-cxxflags.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "common-dependencies-post.py",
+      "function_name": "apply_board_build_flags",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/common-dependencies-post.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "common-dependencies.py",
+      "function_name": "force_ignore_unused_libs",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/common-dependencies.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "common-dependencies.py",
+      "function_name": "set_env_field",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/common-dependencies.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "common-dependencies.py",
+      "function_name": "blab",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/common-dependencies.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "common-dependencies.py",
+      "function_name": "get_all_env_libs",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/common-dependencies.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "common-dependencies.py",
+      "function_name": "get_all_known_libs",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/common-dependencies.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "common-dependencies.py",
+      "function_name": "load_marlin_features",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/common-dependencies.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "common-dependencies.py",
+      "function_name": "MarlinFeatureIsEnabled",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/common-dependencies.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "common-dependencies.py",
+      "function_name": "add_to_feat_cnf",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/common-dependencies.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "common-dependencies.py",
+      "function_name": "load_config",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/common-dependencies.py"
+    },
+    {
+      "complexity": 17,
+      "file_name": "common-dependencies.py",
+      "function_name": "search_compiler",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/common-dependencies.py"
+    },
+    {
+      "complexity": 41,
+      "file_name": "common-dependencies.py",
+      "function_name": "apply_features_config",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/common-dependencies.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "download_mks_assets.py",
+      "function_name": "download_mks_assets",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/download_mks_assets.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "download_mks_assets.py",
+      "function_name": "copy_mks_assets",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/download_mks_assets.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "jgaurora_a5s_a1_with_bootloader.py",
+      "function_name": "addboot",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/jgaurora_a5s_a1_with_bootloader.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "lerdge.py",
+      "function_name": "encrypt",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/lerdge.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "lerdge.py",
+      "function_name": "encryptByte",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/lerdge.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "lerdge.py",
+      "function_name": "encrypt_file",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/lerdge.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "marlin.py",
+      "function_name": "add_post_action",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/marlin.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "marlin.py",
+      "function_name": "relocate_firmware",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/marlin.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "marlin.py",
+      "function_name": "relocate_vtab",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/marlin.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "marlin.py",
+      "function_name": "replace_define",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/marlin.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "marlin.py",
+      "function_name": "copytree",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/marlin.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "marlin.py",
+      "function_name": "custom_ld_script",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/marlin.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "marlin.py",
+      "function_name": "encrypt_mks",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/marlin.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "preflight-checks.py",
+      "function_name": "check_envs",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/preflight-checks.py"
+    },
+    {
+      "complexity": 15,
+      "file_name": "preflight-checks.py",
+      "function_name": "sanity_check_target",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/preflight-checks.py"
+    },
+    {
+      "complexity": 17,
+      "file_name": "preflight-checks.py",
+      "function_name": "get_envs_for_board",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/preflight-checks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "robin.py",
+      "function_name": "prepare",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/robin.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "stm32_serialbuffer.py",
+      "function_name": "getInternalSize",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/stm32_serialbuffer.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "stm32_serialbuffer.py",
+      "function_name": "tryAddFlag",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/stm32_serialbuffer.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "stm32_serialbuffer.py",
+      "function_name": "getBufferSize",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/stm32_serialbuffer.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "stm32_serialbuffer.py",
+      "function_name": "getBuildFlagValue",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/PlatformIO/scripts/stm32_serialbuffer.py"
+    },
+    {
+      "complexity": 9,
+      "file_name": "buildhzk.py",
+      "function_name": "glyph_bits",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/fonts/buildhzk.py"
+    },
+    {
+      "complexity": 19,
+      "file_name": "buildhzk.py",
+      "function_name": "marlin_font_hzk",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/fonts/buildhzk.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "config-labels.py",
+      "function_name": "main",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/config-labels.py"
+    },
+    {
+      "complexity": 28,
+      "file_name": "config-labels.py",
+      "function_name": "process_file",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/config-labels.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "createTemperatureLookupMarlin.py",
+      "function_name": "Thermistor::adc",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/createTemperatureLookupMarlin.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "createTemperatureLookupMarlin.py",
+      "function_name": "Thermistor::resist",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/createTemperatureLookupMarlin.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "createTemperatureLookupMarlin.py",
+      "function_name": "Thermistor::resol",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/createTemperatureLookupMarlin.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "createTemperatureLookupMarlin.py",
+      "function_name": "Thermistor::temp",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/createTemperatureLookupMarlin.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "createTemperatureLookupMarlin.py",
+      "function_name": "Thermistor::voltage",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/createTemperatureLookupMarlin.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "createTemperatureLookupMarlin.py",
+      "function_name": "usage",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/createTemperatureLookupMarlin.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "createTemperatureLookupMarlin.py",
+      "function_name": "Thermistor::__init__",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/createTemperatureLookupMarlin.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "createTemperatureLookupMarlin.py",
+      "function_name": "main",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/createTemperatureLookupMarlin.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "g29_auto.py",
+      "function_name": "has_g1",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/g29_auto.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "g29_auto.py",
+      "function_name": "set_mima",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/g29_auto.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "g29_auto.py",
+      "function_name": "find_z",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/g29_auto.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "g29_auto.py",
+      "function_name": "get_lines",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/g29_auto.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "g29_auto.py",
+      "function_name": "z_parse",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/g29_auto.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "g29_auto.py",
+      "function_name": "find_axis",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/g29_auto.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "gen-tft-image.py",
+      "function_name": "image2bin",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/scripts/gen-tft-image.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::_clear_all",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::_file_save_as",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::_paste",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::_rebuild",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::_select_all",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::copy",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::cut",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::rebuild",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::scroll_errors",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::select_all",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::start_thread",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "auto_build.py",
+      "function_name": "write_to_screen_queue",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::_copy",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::_cut",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::_show_popup",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::check_thread",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::copy",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::cut",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "auto_build.py",
+      "function_name": "get_answer",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "auto_build.py",
+      "function_name": "main",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::__init__",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "auto_build.py",
+      "function_name": "get_CPU_name",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "auto_build.py",
+      "function_name": "get_env_from_line",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::_open_selected_file",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::update",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 9,
+      "file_name": "auto_build.py",
+      "function_name": "sys_PIO",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "auto_build.py",
+      "function_name": "get_starting_env",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 13,
+      "file_name": "auto_build.py",
+      "function_name": "get_board_name",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 14,
+      "file_name": "auto_build.py",
+      "function_name": "output_window::_scroll_errors",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 15,
+      "file_name": "auto_build.py",
+      "function_name": "run_PIO",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 19,
+      "file_name": "auto_build.py",
+      "function_name": "get_build_last",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 35,
+      "file_name": "auto_build.py",
+      "function_name": "open_file",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 49,
+      "file_name": "auto_build.py",
+      "function_name": "resolve_path",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 61,
+      "file_name": "auto_build.py",
+      "function_name": "get_env",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    },
+    {
+      "complexity": 85,
+      "file_name": "auto_build.py",
+      "function_name": "line_print",
+      "path": "qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc/buildroot/share/vscode/auto_build.py"
+    }
+  ],
+  "targets": [
+    "/private/tmp/quickgrade_clones/qg_bmeddeb_Mks-Robin-Nano-Marlin2.0-Firmware_t2sug5lc"
+  ]
+}

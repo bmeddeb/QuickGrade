@@ -33,7 +33,13 @@ def parse_github_url(url: str) -> tuple[str, str] | None:
 
 
 def extract_urls_from_excel(file) -> list[str]:
-    """Extract GitHub URLs from uploaded Excel file."""
+    """
+    Extract GitHub URLs from uploaded Excel file.
+
+    Expected format:
+    - Column A (first column): GitHub slugs (e.g., "owner/repo")
+    - Column B (second column): Taiga slugs (ignored for now)
+    """
     import openpyxl
 
     urls = []
@@ -41,13 +47,27 @@ def extract_urls_from_excel(file) -> list[str]:
 
     for sheet in workbook.worksheets:
         for row in sheet.iter_rows(values_only=True):
-            for cell in row:
-                if cell and isinstance(cell, str):
-                    # Check if cell contains a GitHub URL
-                    if "github.com" in cell.lower():
-                        parsed = parse_github_url(cell)
-                        if parsed:
-                            owner, repo = parsed
+            # First column contains GitHub slugs
+            cell = row[0] if row else None
+            if cell and isinstance(cell, str):
+                cell = cell.strip()
+                if not cell:
+                    continue
+
+                # Check if it's already a full URL
+                if "github.com" in cell.lower():
+                    parsed = parse_github_url(cell)
+                    if parsed:
+                        owner, repo = parsed
+                        full_url = f"https://github.com/{owner}/{repo}"
+                        if full_url not in urls:
+                            urls.append(full_url)
+                # Otherwise treat as slug (owner/repo format)
+                elif "/" in cell:
+                    parts = cell.split("/")
+                    if len(parts) == 2:
+                        owner, repo = parts[0].strip(), parts[1].strip()
+                        if owner and repo:
                             full_url = f"https://github.com/{owner}/{repo}"
                             if full_url not in urls:
                                 urls.append(full_url)
@@ -56,7 +76,11 @@ def extract_urls_from_excel(file) -> list[str]:
 
 
 def extract_urls_from_text(text: str) -> list[str]:
-    """Extract GitHub URLs from text input."""
+    """
+    Extract GitHub URLs from text input.
+
+    Accepts both full URLs and slugs (owner/repo format).
+    """
     urls = []
     lines = text.strip().split("\n")
 
@@ -73,6 +97,15 @@ def extract_urls_from_text(text: str) -> list[str]:
                 full_url = f"https://github.com/{owner}/{repo}"
                 if full_url not in urls:
                     urls.append(full_url)
+        # Otherwise treat as slug (owner/repo format)
+        elif "/" in line:
+            parts = line.split("/")
+            if len(parts) == 2:
+                owner, repo = parts[0].strip(), parts[1].strip()
+                if owner and repo:
+                    full_url = f"https://github.com/{owner}/{repo}"
+                    if full_url not in urls:
+                        urls.append(full_url)
 
     return urls
 
@@ -80,13 +113,28 @@ def extract_urls_from_text(text: str) -> list[str]:
 @login_required
 def dashboard(request):
     """GitHub analytics dashboard."""
-    from .models import Repository
+    from django.db.models import Count, Sum
 
-    repositories = Repository.objects.filter(user=request.user).order_by("-updated_at")[:10]
+    from .models import Commit, Issue, PullRequest, Repository
+
+    repositories = (
+        Repository.objects.filter(user=request.user)
+        .prefetch_related("commits", "pull_requests", "issues")
+        .order_by("-updated_at")[:20]
+    )
+
+    # Aggregate stats
+    total_repos = Repository.objects.filter(user=request.user).count()
+    total_commits = Commit.objects.filter(repository__user=request.user).count()
+    total_prs = PullRequest.objects.filter(repository__user=request.user).count()
+    total_issues = Issue.objects.filter(repository__user=request.user).count()
 
     context = {
         "repositories": repositories,
-        "total_repos": Repository.objects.filter(user=request.user).count(),
+        "total_repos": total_repos,
+        "total_commits": total_commits,
+        "total_prs": total_prs,
+        "total_issues": total_issues,
     }
     return render(request, "github/dashboard.html", context)
 
@@ -180,6 +228,9 @@ def fetch_progress(request, task_id: str):
                         "detail": meta.get("detail"),
                         "progress_min": meta.get("progress_min", 0),
                         "progress_max": meta.get("progress_max", 100),
+                        "repo_index": meta.get("repo_index", 0),
+                        "repo_total": meta.get("repo_total", 0),
+                        "overall_progress": meta.get("overall_progress", 0),
                     }
                 elif state == "SUCCESS":
                     data = {
@@ -231,6 +282,9 @@ def task_status(request, task_id: str):
             "detail": meta.get("detail"),
             "progress_min": meta.get("progress_min", 0),
             "progress_max": meta.get("progress_max", 100),
+            "repo_index": meta.get("repo_index", 0),
+            "repo_total": meta.get("repo_total", 0),
+            "overall_progress": meta.get("overall_progress", 0),
         }
     elif result.state == "SUCCESS":
         response = {"status": "complete", "result": result.result}

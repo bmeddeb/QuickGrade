@@ -49,6 +49,9 @@ def process_repositories(self, user_id: int, repo_urls: list[str]):
                 "detail": progress_data.get("detail"),
                 "progress_min": progress_data.get("progress_min", 0),
                 "progress_max": progress_data.get("progress_max", 100),
+                "repo_index": progress_data.get("repo_index", 0),
+                "repo_total": progress_data.get("repo_total", 0),
+                "overall_progress": progress_data.get("overall_progress", 0),
             },
         )
 

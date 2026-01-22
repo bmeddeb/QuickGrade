@@ -5,7 +5,6 @@ Code analysis service using Lizard and Complexipy.
 import logging
 import os
 import subprocess
-from concurrent.futures import ThreadPoolExecutor
 from typing import TYPE_CHECKING
 
 import lizard
@@ -21,6 +20,14 @@ LIZARD_EXTENSIONS = {
     ".java", ".cs", ".js", ".ts", ".jsx", ".tsx",
     ".py", ".rb", ".go", ".swift", ".m", ".mm",
     ".php", ".scala", ".lua", ".rs", ".kt", ".kts",
+}
+
+# Directories to exclude from analysis
+EXCLUDE_DIRS = {
+    "node_modules", ".git", "vendor", "venv", ".venv", "env",
+    "__pycache__", ".tox", ".pytest_cache", ".mypy_cache",
+    "dist", "build", ".next", ".nuxt", "coverage",
+    "target", "out", "bin", "obj", ".gradle",
 }
 
 
@@ -74,14 +81,28 @@ class AnalysisService:
         results = []
 
         try:
+            logger.info(f"Starting Lizard analysis for {self.repo_path}")
+
+            # Build exclude pattern for common non-source directories
+            exclude_patterns = [f"*/{d}/*" for d in EXCLUDE_DIRS]
+
             # Analyze entire directory
+            # Use threads=1 to avoid multiprocessing issues in Celery workers
             analysis = lizard.analyze(
                 paths=[self.repo_path],
-                threads=4,
+                threads=1,
                 exts=lizard.get_extensions([]),  # Use default extensions
+                exclude_pattern=exclude_patterns,
             )
 
+            logger.info(f"Lizard analysis generator created, iterating over files...")
+
+            file_count = 0
             for file_info in analysis:
+                file_count += 1
+                if file_count % 50 == 0:
+                    logger.info(f"Lizard: processed {file_count} files so far...")
+
                 # Skip files outside repo (shouldn't happen, but safety check)
                 if not file_info.filename.startswith(self.repo_path):
                     continue
@@ -129,25 +150,42 @@ class AnalysisService:
         results = {}
 
         try:
-            # Find all Python files
+            # Find all Python files, excluding common non-source directories
             python_files = []
-            for root, _, files in os.walk(self.repo_path):
+            for root, dirs, files in os.walk(self.repo_path):
+                # Modify dirs in-place to skip excluded directories
+                dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]
+
                 for file in files:
                     if file.endswith(".py"):
                         python_files.append(os.path.join(root, file))
 
             if not python_files:
+                logger.info("No Python files found, skipping complexipy analysis")
                 return results
+
+            logger.info(f"Starting complexipy analysis for {len(python_files)} Python files...")
 
             # Run complexipy on the directory
             # complexipy outputs JSON with -j flag
-            cmd = ["complexipy", self.repo_path, "-j"]
+            # Use -x to exclude common directories
+            exclude_args = []
+            for d in EXCLUDE_DIRS:
+                exclude_args.extend(["-x", d])
+
+            cmd = ["complexipy", self.repo_path, "-j"] + exclude_args
+            logger.info(f"Running complexipy command: {' '.join(cmd[:5])}...")
+
             result = subprocess.run(
                 cmd,
                 capture_output=True,
                 text=True,
-                timeout=300,  # 5 minute timeout
+                timeout=120,  # 2 minute timeout
             )
+            logger.info(f"Complexipy finished with return code {result.returncode}")
+
+            if result.stderr:
+                logger.warning(f"Complexipy stderr: {result.stderr[:500]}")
 
             if result.returncode == 0 and result.stdout:
                 import json
@@ -186,15 +224,19 @@ class AnalysisService:
 
     def analyze_all(self) -> dict:
         """
-        Run all analyses in parallel threads.
+        Run all analyses sequentially.
         Returns combined results.
         """
-        with ThreadPoolExecutor(max_workers=2) as executor:
-            lizard_future = executor.submit(self.analyze_with_lizard)
-            complexipy_future = executor.submit(self.analyze_python_with_complexipy)
+        logger.info(f"Starting code analysis for {self.repo_path}")
 
-            lizard_results = lizard_future.result()
-            complexipy_results = complexipy_future.result()
+        # Run sequentially to avoid multiprocessing issues in Celery workers
+        logger.info("Phase 1: Running Lizard analysis...")
+        lizard_results = self.analyze_with_lizard()
+        logger.info(f"Lizard complete: {len(lizard_results)} files analyzed")
+
+        logger.info("Phase 2: Running Complexipy analysis...")
+        complexipy_results = self.analyze_python_with_complexipy()
+        logger.info(f"Complexipy complete: {len(complexipy_results)} files analyzed")
 
         # Merge complexipy results into lizard results
         for file_result in lizard_results:

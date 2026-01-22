@@ -130,12 +130,43 @@ class CloneService:
 
         repo = Repo(path)
         commits = []
+        seen_shas = set()
 
-        for branch in repo.references:
+        # Iterate over all remote refs to get commits from all branches
+        branches_to_check = []
+
+        # First try remote refs
+        try:
+            for remote in repo.remotes:
+                for ref in remote.refs:
+                    if ref.remote_head != "HEAD":
+                        branches_to_check.append(ref)
+        except Exception as e:
+            logger.warning(f"Error getting remote refs: {e}")
+
+        # Fallback to local branches if no remotes
+        if not branches_to_check:
+            branches_to_check = list(repo.branches)
+
+        for branch in branches_to_check:
             try:
                 for commit in repo.iter_commits(branch):
-                    # Get commit stats
-                    stats = commit.stats.total
+                    # Skip if already seen
+                    if commit.hexsha in seen_shas:
+                        continue
+                    seen_shas.add(commit.hexsha)
+
+                    # Get commit stats (can be slow for large repos)
+                    try:
+                        stats = commit.stats.total
+                        additions = stats.get("insertions", 0)
+                        deletions = stats.get("deletions", 0)
+                        files_changed = stats.get("files", 0)
+                    except Exception:
+                        additions = 0
+                        deletions = 0
+                        files_changed = 0
+
                     commits.append({
                         "sha": commit.hexsha,
                         "message": commit.message.strip(),
@@ -145,24 +176,16 @@ class CloneService:
                         "committer_name": commit.committer.name,
                         "committer_email": commit.committer.email or "",
                         "committed_at": datetime.fromtimestamp(commit.committed_date, tz=timezone.utc),
-                        "additions": stats.get("insertions", 0),
-                        "deletions": stats.get("deletions", 0),
-                        "files_changed": stats.get("files", 0),
+                        "additions": additions,
+                        "deletions": deletions,
+                        "files_changed": files_changed,
                     })
             except Exception as e:
                 logger.warning(f"Error processing branch {branch}: {e}")
                 continue
 
-        # Deduplicate by SHA (commits can appear on multiple branches)
-        seen_shas = set()
-        unique_commits = []
-        for commit in commits:
-            if commit["sha"] not in seen_shas:
-                seen_shas.add(commit["sha"])
-                unique_commits.append(commit)
-
-        logger.info(f"Extracted {len(unique_commits)} unique commits")
-        return unique_commits
+        logger.info(f"Extracted {len(commits)} unique commits")
+        return commits
 
     def extract_branches(self, repo_path: str | None = None) -> list[dict]:
         """Extract branch information from cloned repository."""
@@ -179,18 +202,30 @@ class CloneService:
         except TypeError:
             default_branch = "main"
 
-        for ref in repo.references:
-            if hasattr(ref, "remote_head"):
-                # This is a remote tracking branch
-                branch_name = ref.remote_head
-                if branch_name == "HEAD":
-                    continue
+        # Use remote refs directly to avoid issues with local refs
+        try:
+            for remote in repo.remotes:
+                for ref in remote.refs:
+                    branch_name = ref.remote_head
+                    if branch_name == "HEAD":
+                        continue
+                    branches.append({
+                        "name": branch_name,
+                        "sha": ref.commit.hexsha,
+                        "is_default": branch_name == default_branch,
+                        "is_protected": False,  # Can't determine from local clone
+                        "is_merged": False,  # Will be updated from API
+                    })
+        except Exception as e:
+            logger.warning(f"Error extracting branches from remotes: {e}")
+            # Fallback: use local branches
+            for branch in repo.branches:
                 branches.append({
-                    "name": branch_name,
-                    "sha": ref.commit.hexsha,
-                    "is_default": branch_name == default_branch,
-                    "is_protected": False,  # Can't determine from local clone
-                    "is_merged": False,  # Will be updated from API
+                    "name": branch.name,
+                    "sha": branch.commit.hexsha,
+                    "is_default": branch.name == default_branch,
+                    "is_protected": False,
+                    "is_merged": False,
                 })
 
         logger.info(f"Extracted {len(branches)} branches")
@@ -211,7 +246,13 @@ class CloneService:
             # Step 2: Extract commits
             self._update_tracker("extracting")
             commits = self.extract_commits(repo_path)
-            branches = self.extract_branches(repo_path)
+
+            # Extract branches (non-fatal if fails)
+            try:
+                branches = self.extract_branches(repo_path)
+            except Exception as e:
+                logger.warning(f"Failed to extract branches: {e}")
+                branches = []
 
             # Step 3: Mark for cleanup (analysis happens separately)
             self._update_tracker("pending_cleanup")

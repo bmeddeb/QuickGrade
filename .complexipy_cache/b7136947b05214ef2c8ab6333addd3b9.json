@@ -1,0 +1,4927 @@
+{
+  "functions": [
+    {
+      "complexity": 0,
+      "file_name": "base_client.py",
+      "function_name": "BaseAPIClient::get_current_stage",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/base_client.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "base_client.py",
+      "function_name": "BaseAPIClient::get_progress_message",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/base_client.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "base_client.py",
+      "function_name": "BaseAPIClient::post_processing_hook",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/base_client.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "base_client.py",
+      "function_name": "BaseAPIClient::pre_processing_hook",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/base_client.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "base_client.py",
+      "function_name": "BaseAPIClient::process_item",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/base_client.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_client.py",
+      "function_name": "BaseAPIClient::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/base_client.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_client.py",
+      "function_name": "BaseAPIClient::handle_error",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/base_client.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "base_client.py",
+      "function_name": "BaseAPIClient::_process_item_wrapper",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/base_client.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "base_client.py",
+      "function_name": "BaseAPIClient::process_batch",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/base_client.py"
+    },
+    {
+      "complexity": 21,
+      "file_name": "base_client.py",
+      "function_name": "BaseAPIClient::update_progress",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/base_client.py"
+    },
+    {
+      "complexity": 29,
+      "file_name": "base_client.py",
+      "function_name": "BaseAPIClient::process_items_concurrent",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/base_client.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "branches.py",
+      "function_name": "BranchesAPIClient::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/branches.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "branches.py",
+      "function_name": "BranchesAPIClient::get_current_stage",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/branches.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "branches.py",
+      "function_name": "BranchesAPIClient::get_progress_message",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/branches.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "branches.py",
+      "function_name": "process_branches",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/branches.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "branches.py",
+      "function_name": "BranchesAPIClient::sanitize_branch_name",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/branches.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "branches.py",
+      "function_name": "BranchesAPIClient::process_item",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/branches.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "branches.py",
+      "function_name": "BranchesAPIClient::_check_branch_merge_status",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/branches.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "branches.py",
+      "function_name": "BranchesAPIClient::fetch_and_process_branches",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/branches.py"
+    },
+    {
+      "complexity": 16,
+      "file_name": "branches.py",
+      "function_name": "BranchesAPIClient::_batch_check_merge_status",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/branches.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "cleanup_commits.py",
+      "function_name": "get_excluded_usernames_for_user",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/cleanup_commits.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "cleanup_commits.py",
+      "function_name": "extract_github_info_from_emails",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/cleanup_commits.py"
+    },
+    {
+      "complexity": 29,
+      "file_name": "cleanup_commits.py",
+      "function_name": "update_commits_with_correct_collaborators",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/cleanup_commits.py"
+    },
+    {
+      "complexity": 42,
+      "file_name": "cleanup_commits.py",
+      "function_name": "get_commit_author_info",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/cleanup_commits.py"
+    },
+    {
+      "complexity": 20,
+      "file_name": "collaborators.py",
+      "function_name": "assign_colors_to_repository_collaborators",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/collaborators.py"
+    },
+    {
+      "complexity": 45,
+      "file_name": "collaborators.py",
+      "function_name": "process_collaborators",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/collaborators.py"
+    },
+    {
+      "complexity": 60,
+      "file_name": "collaborators.py",
+      "function_name": "get_or_create_collaborator_safe",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/collaborators.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commits.py",
+      "function_name": "CommitsAPIClient::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/commits.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commits.py",
+      "function_name": "CommitsAPIClient::get_current_stage",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/commits.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commits.py",
+      "function_name": "CommitsAPIClient::get_progress_message",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/commits.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "commits.py",
+      "function_name": "CommitsAPIClient::_save_commit_with_retry",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/commits.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "commits.py",
+      "function_name": "CommitsAPIClient::pre_processing_hook",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/commits.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "commits.py",
+      "function_name": "CommitsAPIClient::_process_collaborator_for_commit",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/commits.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "commits.py",
+      "function_name": "CommitsAPIClient::process_item",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/commits.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "commits.py",
+      "function_name": "process_commits",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/commits.py"
+    },
+    {
+      "complexity": 46,
+      "file_name": "commits.py",
+      "function_name": "CommitsAPIClient::fetch_and_process_commits",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/commits.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "decorators.py",
+      "function_name": "with_db_transaction",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/decorators.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "decorators.py",
+      "function_name": "retry_with_backoff",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/decorators.py"
+    },
+    {
+      "complexity": 23,
+      "file_name": "decorators.py",
+      "function_name": "rate_limit_aware",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/decorators.py"
+    },
+    {
+      "complexity": 26,
+      "file_name": "decorators.py",
+      "function_name": "batch_processor",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/decorators.py"
+    },
+    {
+      "complexity": 28,
+      "file_name": "decorators.py",
+      "function_name": "handle_api_errors",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/decorators.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "github_api.py",
+      "function_name": "fetch_github_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/github_api.py"
+    },
+    {
+      "complexity": 25,
+      "file_name": "github_api.py",
+      "function_name": "fetch_github_data_concurrent",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/github_api.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "issues.py",
+      "function_name": "IssuesAPIClient::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/issues.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "issues.py",
+      "function_name": "IssuesAPIClient::get_current_stage",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/issues.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "issues.py",
+      "function_name": "IssuesAPIClient::get_progress_message",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/issues.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "issues.py",
+      "function_name": "process_issues",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/issues.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "issues.py",
+      "function_name": "IssuesAPIClient::_get_or_create_collaborator",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/issues.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "issues.py",
+      "function_name": "IssuesAPIClient::_save_batch_individually",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/issues.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "issues.py",
+      "function_name": "IssuesAPIClient::process_item",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/issues.py"
+    },
+    {
+      "complexity": 9,
+      "file_name": "issues.py",
+      "function_name": "IssuesAPIClient::_commit_batches",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/issues.py"
+    },
+    {
+      "complexity": 9,
+      "file_name": "issues.py",
+      "function_name": "IssuesAPIClient::_process_issue_comments",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/issues.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "issues.py",
+      "function_name": "IssuesAPIClient::fetch_and_process_issues",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/issues.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "notification_service.py",
+      "function_name": "NotificationService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/notification_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "notification_service.py",
+      "function_name": "NotificationService::queue_notification",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/notification_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "notification_service.py",
+      "function_name": "NotificationService::emit_batch_update",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/notification_service.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "notification_service.py",
+      "function_name": "NotificationService::emit_error",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/notification_service.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "notification_service.py",
+      "function_name": "NotificationService::emit_success",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/notification_service.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "notification_service.py",
+      "function_name": "NotificationService::emit_warning",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/notification_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "notification_service.py",
+      "function_name": "NotificationService::_get_repository_name",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/notification_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "notification_service.py",
+      "function_name": "NotificationService::check_and_notify_gaps",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/notification_service.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "notification_service.py",
+      "function_name": "NotificationService::create_singleton",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/notification_service.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "notification_service.py",
+      "function_name": "NotificationService::emit_progress",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/notification_service.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "notification_service.py",
+      "function_name": "NotificationService::create_database_notification",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/notification_service.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "notification_service.py",
+      "function_name": "NotificationService::flush_notification_queue",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/notification_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests.py",
+      "function_name": "PullRequestsAPIClient::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests.py",
+      "function_name": "PullRequestsAPIClient::_create_branch",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests.py",
+      "function_name": "PullRequestsAPIClient::get_current_stage",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests.py",
+      "function_name": "PullRequestsAPIClient::get_progress_message",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests.py",
+      "function_name": "process_pull_requests",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "pull_requests.py",
+      "function_name": "PullRequestsAPIClient::_get_or_create_branch",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "pull_requests.py",
+      "function_name": "PullRequestsAPIClient::pre_processing_hook",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "pull_requests.py",
+      "function_name": "PullRequestsAPIClient::_create_pull_request",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "pull_requests.py",
+      "function_name": "PullRequestsAPIClient::process_item",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "pull_requests.py",
+      "function_name": "PullRequestsAPIClient::_create_comments",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "pull_requests.py",
+      "function_name": "PullRequestsAPIClient::_create_reviews",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "pull_requests.py",
+      "function_name": "PullRequestsAPIClient::_save_batch_individually",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "pull_requests.py",
+      "function_name": "PullRequestsAPIClient::_commit_batches",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "pull_requests.py",
+      "function_name": "PullRequestsAPIClient::fetch_and_process_pull_requests",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/pull_requests.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "repository.py",
+      "function_name": "save_repository_to_db",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/repository.py"
+    },
+    {
+      "complexity": 9,
+      "file_name": "repository.py",
+      "function_name": "link_repository_collaborators",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/repository.py"
+    },
+    {
+      "complexity": 16,
+      "file_name": "repository.py",
+      "function_name": "process_repository",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "taiga_api.py",
+      "function_name": "priority_func",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "taiga_api.py",
+      "function_name": "fetch_and_queue_task_histories",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "taiga_api.py",
+      "function_name": "check_taiga_slugs_exist",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "taiga_api.py",
+      "function_name": "fetch_user_story_description",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "taiga_api.py",
+      "function_name": "convert_user_stories_to_dataframe",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "taiga_api.py",
+      "function_name": "fetch_and_queue_project_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "taiga_api.py",
+      "function_name": "fetch_task_history_concurrently",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "taiga_api.py",
+      "function_name": "fetch_taiga_data_concurrent",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "taiga_api.py",
+      "function_name": "get_project_info_concurrently",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "taiga_api.py",
+      "function_name": "fetch_project_info",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 20,
+      "file_name": "taiga_api.py",
+      "function_name": "fetch_sprints_concurrently",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 24,
+      "file_name": "taiga_api.py",
+      "function_name": "fetch_sprints_for_project",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 26,
+      "file_name": "taiga_api.py",
+      "function_name": "fetch_task_history",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 40,
+      "file_name": "taiga_api.py",
+      "function_name": "fetch_tasks_for_sprint",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 43,
+      "file_name": "taiga_api.py",
+      "function_name": "fetch_all_tasks_for_all_sprints_concurrently",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_api.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "enqueue_insert_member",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "enqueue_insert_project",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "enqueue_insert_sprint",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "enqueue_insert_task",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "enqueue_insert_task_history",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "enqueue_insert_user_story",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "handle_db_error",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "insert_task_history_from_row",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "truncate_string",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "enqueue_dataframe_insertions",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "get_valid_member_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "insert_member_from_row",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "insert_project_from_row",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "insert_task_from_row",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 9,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "insert_sprint_from_row",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "taiga_ingestion.py",
+      "function_name": "insert_user_story_from_row",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/api/taiga_ingestion.py"
+    },
+    {
+      "complexity": 15,
+      "file_name": "app.py",
+      "function_name": "signal_handler",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "app_factory.py",
+      "function_name": "create_app",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_factory.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "app_factory.py",
+      "function_name": "register_sqlite_optimizations",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_factory.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "app_factory.py",
+      "function_name": "register_jinja_filters",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_factory.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "app_factory.py",
+      "function_name": "register_middleware",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_factory.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app_original.py",
+      "function_name": "documentation_details",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app_original.py",
+      "function_name": "github_login",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app_original.py",
+      "function_name": "index",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app_original.py",
+      "function_name": "list_repos",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app_original.py",
+      "function_name": "load_user",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app_original.py",
+      "function_name": "replace_spaces",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app_original.py",
+      "function_name": "repo_analytics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app_original.py",
+      "function_name": "repo_details",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app_original.py",
+      "function_name": "revoke_github_token",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app_original.py",
+      "function_name": "show_login_form",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app_original.py",
+      "function_name": "taiga_details",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app_original.py",
+      "function_name": "update_profile",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "app_original.py",
+      "function_name": "allowed_file",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "app_original.py",
+      "function_name": "handle_clear_database_request",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "app_original.py",
+      "function_name": "home",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "app_original.py",
+      "function_name": "set_sqlite_pragma",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "app_original.py",
+      "function_name": "user_preferences",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "app_original.py",
+      "function_name": "download_backup",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "app_original.py",
+      "function_name": "signal_handler",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "app_original.py",
+      "function_name": "truncate_title",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "app_original.py",
+      "function_name": "callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "app_original.py",
+      "function_name": "handle_card_created",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "app_original.py",
+      "function_name": "login",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "app_original.py",
+      "function_name": "logout",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "app_original.py",
+      "function_name": "complete_signup",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "app_original.py",
+      "function_name": "update_settings",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "app_original.py",
+      "function_name": "handle_restore",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "app_original.py",
+      "function_name": "check_env_file",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "app_original.py",
+      "function_name": "handle_connection",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 15,
+      "file_name": "app_original.py",
+      "function_name": "handle_card_operation",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 28,
+      "file_name": "app_original.py",
+      "function_name": "upload_file",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/app_original.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "backup.py",
+      "function_name": "create_backup",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/archive/backup.py"
+    },
+    {
+      "complexity": 15,
+      "file_name": "backup.py",
+      "function_name": "create_taiga_backup",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/archive/backup.py"
+    },
+    {
+      "complexity": 53,
+      "file_name": "backup.py",
+      "function_name": "create_github_backup",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/archive/backup.py"
+    },
+    {
+      "complexity": 57,
+      "file_name": "manifest.py",
+      "function_name": "create_manifest",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/archive/manifest.py"
+    },
+    {
+      "complexity": 21,
+      "file_name": "restore.py",
+      "function_name": "restore_backup",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/archive/restore.py"
+    },
+    {
+      "complexity": 24,
+      "file_name": "restore.py",
+      "function_name": "restore_github",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/archive/restore.py"
+    },
+    {
+      "complexity": 30,
+      "file_name": "restore.py",
+      "function_name": "restore_taiga",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/archive/restore.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "oauth.py",
+      "function_name": "init_oauth",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/auth/oauth.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "routes.py",
+      "function_name": "github_login",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/auth/routes.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "routes.py",
+      "function_name": "show_login_form",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/auth/routes.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "routes.py",
+      "function_name": "login",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/auth/routes.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "routes.py",
+      "function_name": "logout",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/auth/routes.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "routes.py",
+      "function_name": "callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/auth/routes.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "routes.py",
+      "function_name": "complete_signup",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/auth/routes.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "utils.py",
+      "function_name": "init_login_manager",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/auth/utils.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "utils.py",
+      "function_name": "load_user",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/auth/utils.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "utils.py",
+      "function_name": "revoke_github_token",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/auth/utils.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "analysis.py",
+      "function_name": "get_analysis_results",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/analysis.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "analysis.py",
+      "function_name": "get_analysis_status",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/analysis.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "analysis.py",
+      "function_name": "run_analysis_async",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/analysis.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "analysis.py",
+      "function_name": "start_analysis",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/analysis.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "main.py",
+      "function_name": "documentation_details",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/main.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "main.py",
+      "function_name": "index",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/main.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "main.py",
+      "function_name": "list_repos",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/main.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "main.py",
+      "function_name": "allowed_file",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/main.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "main.py",
+      "function_name": "home",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/main.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "main.py",
+      "function_name": "download_backup",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/main.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "main.py",
+      "function_name": "handle_restore",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/main.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repo.py",
+      "function_name": "github_app",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/repo.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "settings.py",
+      "function_name": "update_profile",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/settings.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "settings.py",
+      "function_name": "user_preferences",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/settings.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "settings.py",
+      "function_name": "update_settings",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/settings.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "taiga.py",
+      "function_name": "taiga_details",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/taiga.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "upload.py",
+      "function_name": "allowed_file",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/upload.py"
+    },
+    {
+      "complexity": 28,
+      "file_name": "upload.py",
+      "function_name": "upload_file",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/blueprints/upload.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "GitHubDashApp::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "GitHubDashApp::create_layout",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "GitHubDashApp::register_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "create_github_app",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "__init__.py",
+      "function_name": "register_all_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/__init__.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "charts_callbacks.py",
+      "function_name": "ChartsCallbacks::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/charts_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "charts_callbacks.py",
+      "function_name": "ChartsCallbacks::register",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/charts_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "charts_callbacks.py",
+      "function_name": "ChartsCallbacks::setup_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/charts_callbacks.py"
+    },
+    {
+      "complexity": 19,
+      "file_name": "charts_callbacks.py",
+      "function_name": "ChartsCallbacks::setup_donut_1_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/charts_callbacks.py"
+    },
+    {
+      "complexity": 19,
+      "file_name": "charts_callbacks.py",
+      "function_name": "ChartsCallbacks::setup_donut_2_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/charts_callbacks.py"
+    },
+    {
+      "complexity": 19,
+      "file_name": "charts_callbacks.py",
+      "function_name": "ChartsCallbacks::setup_donut_3_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/charts_callbacks.py"
+    },
+    {
+      "complexity": 19,
+      "file_name": "charts_callbacks.py",
+      "function_name": "ChartsCallbacks::setup_rug_plot_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/charts_callbacks.py"
+    },
+    {
+      "complexity": 19,
+      "file_name": "charts_callbacks.py",
+      "function_name": "ChartsCallbacks::setup_stacked_bar_1_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/charts_callbacks.py"
+    },
+    {
+      "complexity": 19,
+      "file_name": "charts_callbacks.py",
+      "function_name": "ChartsCallbacks::setup_stacked_bar_2_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/charts_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "code_reviews_table_callbacks.py",
+      "function_name": "CodeReviewsTableCallbacks::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/code_reviews_table_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "code_reviews_table_callbacks.py",
+      "function_name": "CodeReviewsTableCallbacks::setup_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/code_reviews_table_callbacks.py"
+    },
+    {
+      "complexity": 18,
+      "file_name": "code_reviews_table_callbacks.py",
+      "function_name": "CodeReviewsTableCallbacks::setup_filter_options_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/code_reviews_table_callbacks.py"
+    },
+    {
+      "complexity": 18,
+      "file_name": "code_reviews_table_callbacks.py",
+      "function_name": "CodeReviewsTableCallbacks::setup_table_data_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/code_reviews_table_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborator_stats_callbacks.py",
+      "function_name": "CollaboratorStatsCallbacks::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/collaborator_stats_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborator_stats_callbacks.py",
+      "function_name": "CollaboratorStatsCallbacks::_get_no_data_message",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/collaborator_stats_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborator_stats_callbacks.py",
+      "function_name": "CollaboratorStatsCallbacks::register",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/collaborator_stats_callbacks.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "collaborator_stats_callbacks.py",
+      "function_name": "CollaboratorStatsCallbacks::_get_repository_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/collaborator_stats_callbacks.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "collaborator_stats_callbacks.py",
+      "function_name": "CollaboratorStatsCallbacks::_register_commits_table_update",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/collaborator_stats_callbacks.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "collaborator_stats_callbacks.py",
+      "function_name": "CollaboratorStatsCallbacks::_register_prs_table_update",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/collaborator_stats_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborators_callbacks.py",
+      "function_name": "CollaboratorsCallbacks::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/collaborators_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborators_callbacks.py",
+      "function_name": "CollaboratorsCallbacks::register",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/collaborators_callbacks.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "collaborators_callbacks.py",
+      "function_name": "CollaboratorsCallbacks::_register_close_dropdown",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/collaborators_callbacks.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "collaborators_callbacks.py",
+      "function_name": "CollaboratorsCallbacks::_register_mouse_leave_close",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/collaborators_callbacks.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "collaborators_callbacks.py",
+      "function_name": "CollaboratorsCallbacks::_register_collaborators_update",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/collaborators_callbacks.py"
+    },
+    {
+      "complexity": 38,
+      "file_name": "collaborators_callbacks.py",
+      "function_name": "CollaboratorsCallbacks::_register_notification_dropdown",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/collaborators_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "comments_table_callbacks.py",
+      "function_name": "CommentsTableCallbacks::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/comments_table_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "comments_table_callbacks.py",
+      "function_name": "CommentsTableCallbacks::setup_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/comments_table_callbacks.py"
+    },
+    {
+      "complexity": 18,
+      "file_name": "comments_table_callbacks.py",
+      "function_name": "CommentsTableCallbacks::setup_filter_options_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/comments_table_callbacks.py"
+    },
+    {
+      "complexity": 18,
+      "file_name": "comments_table_callbacks.py",
+      "function_name": "CommentsTableCallbacks::setup_table_data_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/comments_table_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commits_table_callbacks.py",
+      "function_name": "CommitsTableCallbacks::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/commits_table_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commits_table_callbacks.py",
+      "function_name": "CommitsTableCallbacks::setup_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/commits_table_callbacks.py"
+    },
+    {
+      "complexity": 21,
+      "file_name": "commits_table_callbacks.py",
+      "function_name": "CommitsTableCallbacks::setup_filter_options_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/commits_table_callbacks.py"
+    },
+    {
+      "complexity": 27,
+      "file_name": "commits_table_callbacks.py",
+      "function_name": "CommitsTableCallbacks::setup_table_data_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/commits_table_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "header_callbacks.py",
+      "function_name": "HeaderCallbacks::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/header_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "header_callbacks.py",
+      "function_name": "HeaderCallbacks::_register_date_picker_initialization",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/header_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "header_callbacks.py",
+      "function_name": "HeaderCallbacks::_register_date_picker_persistence",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/header_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "header_callbacks.py",
+      "function_name": "HeaderCallbacks::register",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/header_callbacks.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "header_callbacks.py",
+      "function_name": "HeaderCallbacks::_register_header_repo_name_update",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/header_callbacks.py"
+    },
+    {
+      "complexity": 21,
+      "file_name": "header_callbacks.py",
+      "function_name": "HeaderCallbacks::_register_url_to_repo_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/header_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests_table_callbacks.py",
+      "function_name": "PullRequestsTableCallbacks::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/pull_requests_table_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests_table_callbacks.py",
+      "function_name": "PullRequestsTableCallbacks::setup_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/pull_requests_table_callbacks.py"
+    },
+    {
+      "complexity": 18,
+      "file_name": "pull_requests_table_callbacks.py",
+      "function_name": "PullRequestsTableCallbacks::setup_filter_options_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/pull_requests_table_callbacks.py"
+    },
+    {
+      "complexity": 18,
+      "file_name": "pull_requests_table_callbacks.py",
+      "function_name": "PullRequestsTableCallbacks::setup_table_data_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/pull_requests_table_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_stats_callbacks.py",
+      "function_name": "RepositoryStatsCallbacks::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/repository_stats_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_stats_callbacks.py",
+      "function_name": "RepositoryStatsCallbacks::_get_default_outputs",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/repository_stats_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_stats_callbacks.py",
+      "function_name": "RepositoryStatsCallbacks::register",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/repository_stats_callbacks.py"
+    },
+    {
+      "complexity": 14,
+      "file_name": "repository_stats_callbacks.py",
+      "function_name": "RepositoryStatsCallbacks::_register_stats_update",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/callbacks/repository_stats_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "charts_section.py",
+      "function_name": "ChartsSection::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/charts_section.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "charts_section.py",
+      "function_name": "ChartsSection::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/charts_section.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "charts_section.py",
+      "function_name": "ChartsSection::get_chart_ids",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/charts_section.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_1.py",
+      "function_name": "DonutChart1::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_1.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_1.py",
+      "function_name": "DonutChart1::_create_empty_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_1.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_1.py",
+      "function_name": "DonutChart1::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_1.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_1.py",
+      "function_name": "DonutChart1::get_chart_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_1.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_1.py",
+      "function_name": "DonutChart1::get_loading_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_1.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "donut_chart_1.py",
+      "function_name": "DonutChart1::create_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_1.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_2.py",
+      "function_name": "DonutChart2::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_2.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_2.py",
+      "function_name": "DonutChart2::_create_empty_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_2.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_2.py",
+      "function_name": "DonutChart2::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_2.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_2.py",
+      "function_name": "DonutChart2::get_chart_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_2.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_2.py",
+      "function_name": "DonutChart2::get_loading_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_2.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "donut_chart_2.py",
+      "function_name": "DonutChart2::create_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_2.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_3.py",
+      "function_name": "DonutChart3::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_3.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_3.py",
+      "function_name": "DonutChart3::_create_empty_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_3.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_3.py",
+      "function_name": "DonutChart3::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_3.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_3.py",
+      "function_name": "DonutChart3::get_chart_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_3.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "donut_chart_3.py",
+      "function_name": "DonutChart3::get_loading_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_3.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "donut_chart_3.py",
+      "function_name": "DonutChart3::create_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/donut_chart_3.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "rug_plot_chart.py",
+      "function_name": "RugPlotChart::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/rug_plot_chart.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "rug_plot_chart.py",
+      "function_name": "RugPlotChart::_create_empty_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/rug_plot_chart.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "rug_plot_chart.py",
+      "function_name": "RugPlotChart::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/rug_plot_chart.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "rug_plot_chart.py",
+      "function_name": "RugPlotChart::get_chart_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/rug_plot_chart.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "rug_plot_chart.py",
+      "function_name": "RugPlotChart::get_loading_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/rug_plot_chart.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "rug_plot_chart.py",
+      "function_name": "RugPlotChart::create_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/rug_plot_chart.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "stacked_bar_chart_1.py",
+      "function_name": "StackedBarChart1::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/stacked_bar_chart_1.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "stacked_bar_chart_1.py",
+      "function_name": "StackedBarChart1::_create_empty_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/stacked_bar_chart_1.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "stacked_bar_chart_1.py",
+      "function_name": "StackedBarChart1::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/stacked_bar_chart_1.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "stacked_bar_chart_1.py",
+      "function_name": "StackedBarChart1::get_chart_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/stacked_bar_chart_1.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "stacked_bar_chart_1.py",
+      "function_name": "StackedBarChart1::get_loading_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/stacked_bar_chart_1.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "stacked_bar_chart_1.py",
+      "function_name": "StackedBarChart1::create_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/stacked_bar_chart_1.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "stacked_bar_chart_2.py",
+      "function_name": "StackedBarChart2::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/stacked_bar_chart_2.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "stacked_bar_chart_2.py",
+      "function_name": "StackedBarChart2::_create_empty_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/stacked_bar_chart_2.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "stacked_bar_chart_2.py",
+      "function_name": "StackedBarChart2::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/stacked_bar_chart_2.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "stacked_bar_chart_2.py",
+      "function_name": "StackedBarChart2::get_chart_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/stacked_bar_chart_2.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "stacked_bar_chart_2.py",
+      "function_name": "StackedBarChart2::get_loading_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/stacked_bar_chart_2.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "stacked_bar_chart_2.py",
+      "function_name": "StackedBarChart2::create_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/charts/stacked_bar_chart_2.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "code_reviews_table.py",
+      "function_name": "CodeReviewsTable::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/code_reviews_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "code_reviews_table.py",
+      "function_name": "CodeReviewsTable::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/code_reviews_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "code_reviews_table.py",
+      "function_name": "CodeReviewsTable::get_table_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/code_reviews_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "code_reviews_table.py",
+      "function_name": "CodeReviewsTable::get_username_filter_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/code_reviews_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborator_stats.py",
+      "function_name": "CollaboratorStatsCard::_create_commits_table_card",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/collaborator_stats.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborator_stats.py",
+      "function_name": "CollaboratorStatsCard::_create_pull_requests_table_card",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/collaborator_stats.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborator_stats.py",
+      "function_name": "CollaboratorStatsCard::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/collaborator_stats.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "collaborator_stats.py",
+      "function_name": "CollaboratorStatsCard::create_commits_table",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/collaborator_stats.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "collaborator_stats.py",
+      "function_name": "CollaboratorStatsCard::create_pull_requests_table",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/collaborator_stats.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborators.py",
+      "function_name": "CollaboratorsCard::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/collaborators.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "comments_table.py",
+      "function_name": "CommentsTable::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/comments_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "comments_table.py",
+      "function_name": "CommentsTable::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/comments_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "comments_table.py",
+      "function_name": "CommentsTable::get_table_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/comments_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "comments_table.py",
+      "function_name": "CommentsTable::get_username_filter_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/comments_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commits_table.py",
+      "function_name": "CommitsTable::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/commits_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commits_table.py",
+      "function_name": "CommitsTable::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/commits_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commits_table.py",
+      "function_name": "CommitsTable::get_branch_filter_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/commits_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commits_table.py",
+      "function_name": "CommitsTable::get_table_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/commits_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commits_table.py",
+      "function_name": "CommitsTable::get_username_filter_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/commits_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "footer.py",
+      "function_name": "Footer::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/layout/footer.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "header.py",
+      "function_name": "Header::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/layout/header.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "loading_wrapper.py",
+      "function_name": "LoadingWrapper::wrap_content",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/loading_wrapper.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "loading_wrapper.py",
+      "function_name": "LoadingWrapper::wrap_table",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/loading_wrapper.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "loading_wrapper.py",
+      "function_name": "create_chart_loading_wrapper",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/loading_wrapper.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "loading_wrapper.py",
+      "function_name": "create_table_loading_wrapper",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/loading_wrapper.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "loading_wrapper.py",
+      "function_name": "LoadingWrapper::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/loading_wrapper.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "loading_wrapper.py",
+      "function_name": "LoadingWrapper::wrap_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/loading_wrapper.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests_table.py",
+      "function_name": "PullRequestsTable::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/pull_requests_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests_table.py",
+      "function_name": "PullRequestsTable::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/pull_requests_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests_table.py",
+      "function_name": "PullRequestsTable::get_table_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/pull_requests_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests_table.py",
+      "function_name": "PullRequestsTable::get_username_filter_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/pull_requests_table.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_stats.py",
+      "function_name": "RepositoryStatsCard::_create_stat_card",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/repository_stats.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_stats.py",
+      "function_name": "RepositoryStatsCard::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/repository_stats.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_stats.py",
+      "function_name": "RepositoryStatsCard::get_stat_ids",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/components/repository_stats.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "main_layout.py",
+      "function_name": "MainLayout::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/layouts/main_layout.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "main_layout.py",
+      "function_name": "MainLayout::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/layouts/main_layout.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "main_layout.py",
+      "function_name": "MainLayout::get_chart_ids",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/github/layouts/main_layout.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "PreferencesDashApp::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "PreferencesDashApp::create_layout",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "PreferencesDashApp::register_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "create_preferences_app",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "__init__.py",
+      "function_name": "register_all_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/__init__.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "palette_editor_callbacks.py",
+      "function_name": "PaletteEditorCallbacks::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/palette_editor_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "palette_editor_callbacks.py",
+      "function_name": "PaletteEditorCallbacks::setup_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/palette_editor_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "palette_editor_callbacks.py",
+      "function_name": "PaletteEditorCallbacks::setup_color_picker_visibility",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/palette_editor_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "palette_editor_callbacks.py",
+      "function_name": "PaletteEditorCallbacks::setup_outside_click_detection",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/palette_editor_callbacks.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "palette_editor_callbacks.py",
+      "function_name": "PaletteEditorCallbacks::setup_palette_display",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/palette_editor_callbacks.py"
+    },
+    {
+      "complexity": 24,
+      "file_name": "palette_editor_callbacks.py",
+      "function_name": "PaletteEditorCallbacks::setup_palette_creation",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/palette_editor_callbacks.py"
+    },
+    {
+      "complexity": 29,
+      "file_name": "palette_editor_callbacks.py",
+      "function_name": "PaletteEditorCallbacks::setup_palette_loading",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/palette_editor_callbacks.py"
+    },
+    {
+      "complexity": 45,
+      "file_name": "palette_editor_callbacks.py",
+      "function_name": "PaletteEditorCallbacks::setup_palette_deletion",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/palette_editor_callbacks.py"
+    },
+    {
+      "complexity": 46,
+      "file_name": "palette_editor_callbacks.py",
+      "function_name": "PaletteEditorCallbacks::setup_active_palette_selection",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/palette_editor_callbacks.py"
+    },
+    {
+      "complexity": 55,
+      "file_name": "palette_editor_callbacks.py",
+      "function_name": "PaletteEditorCallbacks::setup_palette_editing",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/palette_editor_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::_create_error_feedback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::_create_error_modal_content",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::_create_stat_badge",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::_create_success_feedback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::setup_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::_generate_excluded_username_inputs",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::_create_cleanup_preview_modal",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::_setup_outside_click_detection",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::_auto_save_excluded_usernames",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::_get_gap_impact_text",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::setup_gap_settings",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 14,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::setup_gap_save_reset",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 19,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::_setup_color_picker_visibility",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 24,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::_setup_color_picker_updates",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 54,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::setup_cleanup_process",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 55,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::setup_task_colors",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 96,
+      "file_name": "settings_callbacks.py",
+      "function_name": "SettingsCallbacks::setup_excluded_usernames",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/settings_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "url_callbacks.py",
+      "function_name": "UrlCallbacks::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/url_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "url_callbacks.py",
+      "function_name": "UrlCallbacks::setup_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/url_callbacks.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "url_callbacks.py",
+      "function_name": "UrlCallbacks::get_user_id_from_url",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/url_callbacks.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "url_callbacks.py",
+      "function_name": "UrlCallbacks::setup_page_validation",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/url_callbacks.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "url_callbacks.py",
+      "function_name": "UrlCallbacks::setup_user_id_extraction",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/url_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile_callbacks.py",
+      "function_name": "UserProfileCallbacks::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/user_profile_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile_callbacks.py",
+      "function_name": "UserProfileCallbacks::_create_error_feedback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/user_profile_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile_callbacks.py",
+      "function_name": "UserProfileCallbacks::_create_success_feedback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/user_profile_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile_callbacks.py",
+      "function_name": "UserProfileCallbacks::setup_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/user_profile_callbacks.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "user_profile_callbacks.py",
+      "function_name": "UserProfileCallbacks::setup_profile_population",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/user_profile_callbacks.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "user_profile_callbacks.py",
+      "function_name": "UserProfileCallbacks::setup_profile_reset",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/user_profile_callbacks.py"
+    },
+    {
+      "complexity": 15,
+      "file_name": "user_profile_callbacks.py",
+      "function_name": "UserProfileCallbacks::setup_profile_save",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/callbacks/user_profile_callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "excluded_usernames.py",
+      "function_name": "ExcludedUsernamesCard::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/excluded_usernames.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "excluded_usernames.py",
+      "function_name": "ExcludedUsernamesCard::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/excluded_usernames.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "excluded_usernames.py",
+      "function_name": "ExcludedUsernamesCard::get_button_ids",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/excluded_usernames.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "excluded_usernames.py",
+      "function_name": "ExcludedUsernamesCard::get_card_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/excluded_usernames.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "excluded_usernames.py",
+      "function_name": "ExcludedUsernamesCard::get_container_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/excluded_usernames.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "excluded_usernames.py",
+      "function_name": "ExcludedUsernamesCard::_generate_initial_inputs",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/excluded_usernames.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "excluded_usernames.py",
+      "function_name": "ExcludedUsernamesCard::_generate_username_inputs",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/excluded_usernames.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "gap_settings.py",
+      "function_name": "GapSettingsCard::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/gap_settings.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "gap_settings.py",
+      "function_name": "GapSettingsCard::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/gap_settings.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "gap_settings.py",
+      "function_name": "GapSettingsCard::get_button_ids",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/gap_settings.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "gap_settings.py",
+      "function_name": "GapSettingsCard::get_card_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/gap_settings.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "gap_settings.py",
+      "function_name": "GapSettingsCard::get_slider_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/gap_settings.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "footer.py",
+      "function_name": "Footer::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/layout/footer.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "header.py",
+      "function_name": "Header::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/layout/header.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "palette_editor.py",
+      "function_name": "PaletteEditorCard::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/palette_editor.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "palette_editor.py",
+      "function_name": "PaletteEditorCard::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/palette_editor.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "palette_editor.py",
+      "function_name": "PaletteEditorCard::generate_palette_card",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/palette_editor.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "palette_editor.py",
+      "function_name": "PaletteEditorCard::get_button_ids",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/palette_editor.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "palette_editor.py",
+      "function_name": "PaletteEditorCard::get_card_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/palette_editor.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "palette_editor.py",
+      "function_name": "PaletteEditorCard::get_container_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/palette_editor.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "task_colors.py",
+      "function_name": "TaskColorsCard::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/task_colors.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "task_colors.py",
+      "function_name": "TaskColorsCard::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/task_colors.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "task_colors.py",
+      "function_name": "TaskColorsCard::get_button_ids",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/task_colors.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "task_colors.py",
+      "function_name": "TaskColorsCard::get_card_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/task_colors.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "task_colors.py",
+      "function_name": "TaskColorsCard::get_task_duration_types",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/task_colors.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "task_colors.py",
+      "function_name": "TaskColorsCard::_create_color_control",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/task_colors.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile.py",
+      "function_name": "UserProfileCard::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/user_profile.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile.py",
+      "function_name": "UserProfileCard::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/user_profile.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile.py",
+      "function_name": "UserProfileCard::get_button_ids",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/user_profile.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile.py",
+      "function_name": "UserProfileCard::get_card_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/user_profile.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile.py",
+      "function_name": "UserProfileCard::get_input_ids",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/components/user_profile.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "main_layout.py",
+      "function_name": "MainLayout::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/layouts/main_layout.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "main_layout.py",
+      "function_name": "MainLayout::build",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/layouts/main_layout.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "main_layout.py",
+      "function_name": "MainLayout::get_component_ids",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/apps/preferences/layouts/main_layout.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "BaseDashApp::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "BaseDashApp::create_layout",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "BaseDashApp::get_app",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "BaseDashApp::get_config",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "BaseDashApp::post_init",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "app.py",
+      "function_name": "BaseDashApp::register_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/app.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "app.py",
+      "function_name": "BaseDashApp::_get_scripts",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/app.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "app.py",
+      "function_name": "BaseDashApp::_get_stylesheets",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/app.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "app.py",
+      "function_name": "BaseDashApp::_initialize",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/app.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "app.py",
+      "function_name": "BaseDashApp::add_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/app.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "callbacks.py",
+      "function_name": "BaseCallback::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "callbacks.py",
+      "function_name": "BaseCallback::create_empty_state",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "callbacks.py",
+      "function_name": "BaseCallback::create_error_message",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "callbacks.py",
+      "function_name": "BaseCallback::create_loading_message",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "callbacks.py",
+      "function_name": "BaseCallback::validate_inputs",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "callbacks.py",
+      "function_name": "BaseCallback::with_loading",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "callbacks.py",
+      "function_name": "CallbackManager::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/callbacks.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "callbacks.py",
+      "function_name": "CallbackManager::register_handler",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/callbacks.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "callbacks.py",
+      "function_name": "CallbackManager::register_all",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/callbacks.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "callbacks.py",
+      "function_name": "CallbackManager::get_handler",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/callbacks.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "callbacks.py",
+      "function_name": "BaseCallback::handle_errors",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/callbacks.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "callbacks.py",
+      "function_name": "BaseCallback::register_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/base/callbacks.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "settings.py",
+      "function_name": "get_app_config",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/config/settings.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "base_repository.py",
+      "function_name": "BaseRepository::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "base_repository.py",
+      "function_name": "BaseRepository::exists",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "base_repository.py",
+      "function_name": "BaseRepository::session",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "base_repository.py",
+      "function_name": "TimestampedRepository::get_recent",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_repository.py",
+      "function_name": "BaseRepository::bulk_create",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_repository.py",
+      "function_name": "BaseRepository::create",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_repository.py",
+      "function_name": "BaseRepository::get_by_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_repository.py",
+      "function_name": "TimestampedRepository::get_by_date_range",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "base_repository.py",
+      "function_name": "BaseRepository::count",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "base_repository.py",
+      "function_name": "BaseRepository::delete",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "base_repository.py",
+      "function_name": "BaseRepository::get_filtered",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "base_repository.py",
+      "function_name": "BaseRepository::get_all",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "base_repository.py",
+      "function_name": "BaseRepository::update",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "base_repository.py",
+      "function_name": "BaseRepository::aggregate_by_field",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 24,
+      "file_name": "base_repository.py",
+      "function_name": "BaseRepository::_apply_filters",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/base_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "code_reviews_repository.py",
+      "function_name": "CodeReviewsRepository::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/code_reviews_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "code_reviews_repository.py",
+      "function_name": "CodeReviewsRepository::get_unique_usernames",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/code_reviews_repository.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "code_reviews_repository.py",
+      "function_name": "CodeReviewsRepository::get_code_reviews_summary",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/code_reviews_repository.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "code_reviews_repository.py",
+      "function_name": "CodeReviewsRepository::get_code_reviews_for_table",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/code_reviews_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborators_repository.py",
+      "function_name": "CollaboratorsRepository::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/collaborators_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborators_repository.py",
+      "function_name": "CollaboratorsRepository::get_top_contributors",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/collaborators_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "collaborators_repository.py",
+      "function_name": "CollaboratorsRepository::get_by_repository",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/collaborators_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "collaborators_repository.py",
+      "function_name": "CollaboratorsRepository::get_by_repository_name",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/collaborators_repository.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "collaborators_repository.py",
+      "function_name": "CollaboratorsRepository::get_collaborator_code_review_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/collaborators_repository.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "collaborators_repository.py",
+      "function_name": "CollaboratorsRepository::get_collaborator_commit_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/collaborators_repository.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "collaborators_repository.py",
+      "function_name": "CollaboratorsRepository::get_collaborator_pull_request_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/collaborators_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "comments_repository.py",
+      "function_name": "CommentsRepository::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/comments_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "comments_repository.py",
+      "function_name": "CommentsRepository::get_unique_usernames",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/comments_repository.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "comments_repository.py",
+      "function_name": "CommentsRepository::get_comments_for_table",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/comments_repository.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "comments_repository.py",
+      "function_name": "CommentsRepository::get_comments_summary",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/comments_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commits_repository.py",
+      "function_name": "CommitsRepository::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/commits_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commits_repository.py",
+      "function_name": "CommitsRepository::get_unique_usernames",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/commits_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "commits_repository.py",
+      "function_name": "CommitsRepository::get_unique_branches",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/commits_repository.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "commits_repository.py",
+      "function_name": "CommitsRepository::get_commits_for_table",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/commits_repository.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "commits_repository.py",
+      "function_name": "CommitsRepository::get_commits_summary",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/commits_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "notification_repository.py",
+      "function_name": "NotificationRepository::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/notification_repository.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "notification_repository.py",
+      "function_name": "NotificationRepository::get_unread_notifications_count",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/notification_repository.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "notification_repository.py",
+      "function_name": "NotificationRepository::get_notifications_count_by_collaborator",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/notification_repository.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "notification_repository.py",
+      "function_name": "NotificationRepository::get_recent_notifications_by_collaborator",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/notification_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests_repository.py",
+      "function_name": "PullRequestsRepository::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/pull_requests_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests_repository.py",
+      "function_name": "PullRequestsRepository::get_unique_usernames",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/pull_requests_repository.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "pull_requests_repository.py",
+      "function_name": "PullRequestsRepository::get_pull_requests_summary",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/pull_requests_repository.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "pull_requests_repository.py",
+      "function_name": "PullRequestsRepository::get_pull_requests_for_table",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/pull_requests_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_repository.py",
+      "function_name": "RepositoryRepository::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/repository_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_repository.py",
+      "function_name": "RepositoryRepository::get_by_name_only",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/repository_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "repository_repository.py",
+      "function_name": "RepositoryRepository::get_repository_id_by_name",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/repository_repository.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "repository_repository.py",
+      "function_name": "RepositoryRepository::get_by_owner_and_name",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/repository_repository.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "repository_repository.py",
+      "function_name": "RepositoryRepository::_calculate_merges_count",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/repository_repository.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "repository_repository.py",
+      "function_name": "RepositoryRepository::get_repository_stats",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/repository_repository.py"
+    },
+    {
+      "complexity": 14,
+      "file_name": "repository_repository.py",
+      "function_name": "RepositoryRepository::get_full_repository_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/github/repository_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "palette_repository.py",
+      "function_name": "PaletteRepository::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/palette_repository.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "palette_repository.py",
+      "function_name": "PaletteRepository::duplicate_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/palette_repository.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "palette_repository.py",
+      "function_name": "PaletteRepository::get_palette_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/palette_repository.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "palette_repository.py",
+      "function_name": "PaletteRepository::get_user_palettes",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/palette_repository.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "palette_repository.py",
+      "function_name": "PaletteRepository::create_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/palette_repository.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "palette_repository.py",
+      "function_name": "PaletteRepository::get_palette_by_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/palette_repository.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "palette_repository.py",
+      "function_name": "PaletteRepository::set_active_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/palette_repository.py"
+    },
+    {
+      "complexity": 14,
+      "file_name": "palette_repository.py",
+      "function_name": "PaletteRepository::get_active_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/palette_repository.py"
+    },
+    {
+      "complexity": 16,
+      "file_name": "palette_repository.py",
+      "function_name": "PaletteRepository::delete_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/palette_repository.py"
+    },
+    {
+      "complexity": 17,
+      "file_name": "palette_repository.py",
+      "function_name": "PaletteRepository::update_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/palette_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::_get_default_settings",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::_get_default_task_durations",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::remove_excluded_username",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::reset_settings_to_default",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::update_excluded_usernames",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::update_gap_setting",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::update_task_durations",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::update_unassigned_member_color",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::add_excluded_username",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::get_excluded_usernames",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::get_task_durations",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::get_unassigned_member_color",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "settings_repository.py",
+      "function_name": "SettingsRepository::get_user_settings",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/settings_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "simple_cleanup_repository.py",
+      "function_name": "SimpleCleanupRepository::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/simple_cleanup_repository.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "simple_cleanup_repository.py",
+      "function_name": "SimpleCleanupRepository::get_cleanup_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/simple_cleanup_repository.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "simple_cleanup_repository.py",
+      "function_name": "SimpleCleanupRepository::cleanup_collaborators_by_usernames",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/simple_cleanup_repository.py"
+    },
+    {
+      "complexity": 28,
+      "file_name": "simple_cleanup_repository.py",
+      "function_name": "SimpleCleanupRepository::get_collaborator_info_by_usernames",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/simple_cleanup_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile_repository.py",
+      "function_name": "UserProfileRepository::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/user_profile_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "user_profile_repository.py",
+      "function_name": "UserProfileRepository::create_user_preferences",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/user_profile_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "user_profile_repository.py",
+      "function_name": "UserProfileRepository::get_user_by_github_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/user_profile_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "user_profile_repository.py",
+      "function_name": "UserProfileRepository::get_user_by_username",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/user_profile_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "user_profile_repository.py",
+      "function_name": "UserProfileRepository::get_user_preferences",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/user_profile_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "user_profile_repository.py",
+      "function_name": "UserProfileRepository::get_user_with_preferences",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/user_profile_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "user_profile_repository.py",
+      "function_name": "UserProfileRepository::get_users_with_repositories",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/user_profile_repository.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "user_profile_repository.py",
+      "function_name": "UserProfileRepository::search_users",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/user_profile_repository.py"
+    },
+    {
+      "complexity": 9,
+      "file_name": "user_profile_repository.py",
+      "function_name": "UserProfileRepository::update_user_preferences",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/user_profile_repository.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "user_profile_repository.py",
+      "function_name": "UserProfileRepository::update_profile",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/repositories/preferences/user_profile_repository.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "base_service.py",
+      "function_name": "BaseService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "base_service.py",
+      "function_name": "BaseService::get_all",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "base_service.py",
+      "function_name": "BaseService::get_by_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "base_service.py",
+      "function_name": "BaseService::validate",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_service.py",
+      "function_name": "AggregationService::aggregate_by_field",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_service.py",
+      "function_name": "BaseService::count",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_service.py",
+      "function_name": "BaseService::execute_with_logging",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_service.py",
+      "function_name": "BaseService::get_paginated",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_service.py",
+      "function_name": "CRUDService::create",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_service.py",
+      "function_name": "CRUDService::delete",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_service.py",
+      "function_name": "CRUDService::get_by_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "base_service.py",
+      "function_name": "CRUDService::update",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "base_service.py",
+      "function_name": "AggregationService::get_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "base_service.py",
+      "function_name": "BaseService::_parse_date",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "base_service.py",
+      "function_name": "CRUDService::get_all",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "base_service.py",
+      "function_name": "BaseService::process_filters",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/base_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "charts_service.py",
+      "function_name": "ChartsService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/charts_service.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "charts_service.py",
+      "function_name": "ChartsService::get_code_changes_distribution_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/charts_service.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "charts_service.py",
+      "function_name": "ChartsService::get_commits_by_collaborator_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/charts_service.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "charts_service.py",
+      "function_name": "ChartsService::get_pull_requests_by_status_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/charts_service.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "charts_service.py",
+      "function_name": "ChartsService::get_code_review_distribution_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/charts_service.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "charts_service.py",
+      "function_name": "ChartsService::get_commit_distribution_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/charts_service.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "charts_service.py",
+      "function_name": "ChartsService::get_pull_request_distribution_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/charts_service.py"
+    },
+    {
+      "complexity": 14,
+      "file_name": "charts_service.py",
+      "function_name": "ChartsService::get_commit_activity_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/charts_service.py"
+    },
+    {
+      "complexity": 14,
+      "file_name": "charts_service.py",
+      "function_name": "ChartsService::get_commit_timeline_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/charts_service.py"
+    },
+    {
+      "complexity": 14,
+      "file_name": "charts_service.py",
+      "function_name": "ChartsService::get_pull_request_activity_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/charts_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "code_reviews_service.py",
+      "function_name": "CodeReviewsService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/code_reviews_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "code_reviews_service.py",
+      "function_name": "CodeReviewsService::get_code_reviews_summary",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/code_reviews_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "code_reviews_service.py",
+      "function_name": "CodeReviewsService::get_filter_options",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/code_reviews_service.py"
+    },
+    {
+      "complexity": 17,
+      "file_name": "code_reviews_service.py",
+      "function_name": "CodeReviewsService::get_code_reviews_table_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/code_reviews_service.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "collaborator_color_service.py",
+      "function_name": "get_collaborator_usernames_for_repository",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborator_color_service.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "collaborator_color_service.py",
+      "function_name": "get_collaborator_color_map_for_repository",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborator_color_service.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "collaborator_color_service.py",
+      "function_name": "get_collaborator_data_for_repository",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborator_color_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborator_stats_service.py",
+      "function_name": "CollaboratorStatsService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborator_stats_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "collaborator_stats_service.py",
+      "function_name": "CollaboratorStatsService::_format_commit_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborator_stats_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "collaborator_stats_service.py",
+      "function_name": "CollaboratorStatsService::_format_pull_request_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborator_stats_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "collaborator_stats_service.py",
+      "function_name": "CollaboratorStatsService::get_commit_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborator_stats_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "collaborator_stats_service.py",
+      "function_name": "CollaboratorStatsService::get_pull_request_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborator_stats_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "collaborator_stats_service.py",
+      "function_name": "CollaboratorStatsService::get_statistics_summary",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborator_stats_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "collaborator_stats_service.py",
+      "function_name": "CollaboratorStatsService::_format_number",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborator_stats_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborators_service.py",
+      "function_name": "CollaboratorsService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborators_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborators_service.py",
+      "function_name": "CollaboratorsService::get_collaborator_notifications",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborators_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "collaborators_service.py",
+      "function_name": "CollaboratorsService::get_top_contributors",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborators_service.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "collaborators_service.py",
+      "function_name": "CollaboratorsService::format_for_display",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborators_service.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "collaborators_service.py",
+      "function_name": "CollaboratorsService::_get_collaborators_by_repo_name_only",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborators_service.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "collaborators_service.py",
+      "function_name": "CollaboratorsService::get_repository_collaborators",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/collaborators_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "comments_service.py",
+      "function_name": "CommentsService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/comments_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "comments_service.py",
+      "function_name": "CommentsService::get_comments_summary",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/comments_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "comments_service.py",
+      "function_name": "CommentsService::get_filter_options",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/comments_service.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "comments_service.py",
+      "function_name": "CommentsService::get_comments_table_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/comments_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commits_service.py",
+      "function_name": "CommitsService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/commits_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "commits_service.py",
+      "function_name": "CommitsService::get_commits_summary",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/commits_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "commits_service.py",
+      "function_name": "CommitsService::get_filter_options",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/commits_service.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "commits_service.py",
+      "function_name": "CommitsService::get_commits_table_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/commits_service.py"
+    },
+    {
+      "complexity": 24,
+      "file_name": "notification_analysis_service.py",
+      "function_name": "analyze_commit_activity",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/notification_analysis_service.py"
+    },
+    {
+      "complexity": 29,
+      "file_name": "notification_analysis_service.py",
+      "function_name": "analyze_pull_request_activity",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/notification_analysis_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_requests_service.py",
+      "function_name": "PullRequestsService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/pull_requests_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "pull_requests_service.py",
+      "function_name": "PullRequestsService::get_filter_options",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/pull_requests_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "pull_requests_service.py",
+      "function_name": "PullRequestsService::get_pull_requests_summary",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/pull_requests_service.py"
+    },
+    {
+      "complexity": 19,
+      "file_name": "pull_requests_service.py",
+      "function_name": "PullRequestsService::get_pull_requests_table_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/pull_requests_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "repository_list_service.py",
+      "function_name": "get_repositories_with_collaborators",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/repository_list_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_service.py",
+      "function_name": "RepositoryService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/repository_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_service.py",
+      "function_name": "RepositoryService::get_repository_by_parts",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/repository_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "repository_service.py",
+      "function_name": "RepositoryService::_format_date",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/repository_service.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "repository_service.py",
+      "function_name": "RepositoryService::_get_repository_by_full_name",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/repository_service.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "repository_service.py",
+      "function_name": "RepositoryService::_get_repository_by_name_only",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/repository_service.py"
+    },
+    {
+      "complexity": 13,
+      "file_name": "repository_service.py",
+      "function_name": "RepositoryService::get_repository_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/repository_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_stats_service.py",
+      "function_name": "RepositoryStatsService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/repository_stats_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_stats_service.py",
+      "function_name": "RepositoryStatsService::_format_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/repository_stats_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_stats_service.py",
+      "function_name": "RepositoryStatsService::_get_default_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/repository_stats_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "repository_stats_service.py",
+      "function_name": "RepositoryStatsService::get_repository_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/repository_stats_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "repository_stats_service.py",
+      "function_name": "RepositoryStatsService::_format_number",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/repository_stats_service.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "repository_stats_service.py",
+      "function_name": "RepositoryStatsService::get_statistics_summary",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/github/repository_stats_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "cleanup_service.py",
+      "function_name": "CleanupService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/cleanup_service.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "cleanup_service.py",
+      "function_name": "CleanupService::_generate_safety_warnings",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/cleanup_service.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "cleanup_service.py",
+      "function_name": "CleanupService::preview_cleanup_impact",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/cleanup_service.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "cleanup_service.py",
+      "function_name": "CleanupService::_validate_usernames",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/cleanup_service.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "cleanup_service.py",
+      "function_name": "CleanupService::process_excluded_usernames",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/cleanup_service.py"
+    },
+    {
+      "complexity": 16,
+      "file_name": "cleanup_service.py",
+      "function_name": "CleanupService::get_cleanup_recommendations",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/cleanup_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "palette_service.py",
+      "function_name": "PaletteService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/palette_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "palette_service.py",
+      "function_name": "PaletteService::get_user_palettes_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/palette_service.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "palette_service.py",
+      "function_name": "PaletteService::duplicate_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/palette_service.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "palette_service.py",
+      "function_name": "PaletteService::export_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/palette_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "palette_service.py",
+      "function_name": "PaletteService::_is_valid_color",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/palette_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "palette_service.py",
+      "function_name": "PaletteService::create_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/palette_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "palette_service.py",
+      "function_name": "PaletteService::get_palette_colors_for_charts",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/palette_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "palette_service.py",
+      "function_name": "PaletteService::import_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/palette_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "palette_service.py",
+      "function_name": "PaletteService::update_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/palette_service.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "palette_service.py",
+      "function_name": "PaletteService::set_active_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/palette_service.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "palette_service.py",
+      "function_name": "PaletteService::delete_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/palette_service.py"
+    },
+    {
+      "complexity": 26,
+      "file_name": "palette_service.py",
+      "function_name": "PaletteService::validate_palette_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/palette_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::_get_suggested_exclusions",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::get_excluded_usernames_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::get_task_durations_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::get_user_settings_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::reset_settings_to_default",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::_get_gap_impact_description",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::_validate_username",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::add_excluded_username",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::update_task_color",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::update_unassigned_member_color",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::_validate_color",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::remove_excluded_username",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::update_all_task_colors",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::update_gap_setting",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "settings_service.py",
+      "function_name": "SettingsService::update_excluded_usernames",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/settings_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile_service.py",
+      "function_name": "UserProfileService::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/user_profile_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile_service.py",
+      "function_name": "UserProfileService::_is_valid_email",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/user_profile_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile_service.py",
+      "function_name": "UserProfileService::_is_valid_url",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/user_profile_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile_service.py",
+      "function_name": "UserProfileService::get_user_by_github_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/user_profile_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile_service.py",
+      "function_name": "UserProfileService::get_user_by_username",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/user_profile_service.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "user_profile_service.py",
+      "function_name": "UserProfileService::search_users",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/user_profile_service.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "user_profile_service.py",
+      "function_name": "UserProfileService::update_user_profile",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/user_profile_service.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "user_profile_service.py",
+      "function_name": "UserProfileService::get_user_statistics",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/user_profile_service.py"
+    },
+    {
+      "complexity": 16,
+      "file_name": "user_profile_service.py",
+      "function_name": "UserProfileService::get_user_profile_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/user_profile_service.py"
+    },
+    {
+      "complexity": 24,
+      "file_name": "user_profile_service.py",
+      "function_name": "UserProfileService::validate_profile_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/services/preferences/user_profile_service.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "cache.py",
+      "function_name": "SimpleCache::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/cache.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "cache.py",
+      "function_name": "SimpleCache::clear",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/cache.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "cache.py",
+      "function_name": "SimpleCache::set",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/cache.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "cache.py",
+      "function_name": "cache_key",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/cache.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "cache.py",
+      "function_name": "get_cache",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/cache.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "cache.py",
+      "function_name": "SimpleCache::cleanup_expired",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/cache.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "cache.py",
+      "function_name": "SimpleCache::delete",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/cache.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "cache.py",
+      "function_name": "SimpleCache::get",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/cache.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "cache.py",
+      "function_name": "cached_result",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/cache.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborator_helpers.py",
+      "function_name": "get_collaborator_names",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/collaborator_helpers.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "decorators.py",
+      "function_name": "require_auth",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/decorators.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "decorators.py",
+      "function_name": "measure_performance",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/decorators.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "decorators.py",
+      "function_name": "debounce",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/decorators.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "decorators.py",
+      "function_name": "log_execution_time",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/decorators.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "decorators.py",
+      "function_name": "cache_result_old",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/decorators.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "decorators.py",
+      "function_name": "handle_callback_errors",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/decorators.py"
+    },
+    {
+      "complexity": 9,
+      "file_name": "decorators.py",
+      "function_name": "validate_inputs",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/decorators.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "helper.py",
+      "function_name": "truncate_string",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/dash_apps/utils/helper.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborator_analytics.py",
+      "function_name": "get_collaborator_details",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/collaborator_analytics.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborator_analytics.py",
+      "function_name": "get_collaborator_names",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/collaborator_analytics.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborator_analytics.py",
+      "function_name": "get_commits",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/collaborator_analytics.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "collaborator_analytics.py",
+      "function_name": "get_pull_requests",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/collaborator_analytics.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "collaborator_analytics.py",
+      "function_name": "get_code_review_and_comment_counts",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/collaborator_analytics.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "collaborator_analytics.py",
+      "function_name": "tally_items_by_collaborator",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/collaborator_analytics.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "commit_analytics.py",
+      "function_name": "get_commits_dataframe",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/commit_analytics.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "commit_analytics.py",
+      "function_name": "get_commit_details",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/commit_analytics.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "commit_analytics.py",
+      "function_name": "_process_and_format_message",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/commit_analytics.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "commit_analytics.py",
+      "function_name": "format_commit_messages",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/commit_analytics.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "date_utils.py",
+      "function_name": "filter_items_by_date",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/date_utils.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "date_utils.py",
+      "function_name": "convert_to_arizona_time",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/date_utils.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "date_utils.py",
+      "function_name": "format_date_and_separate_time",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/date_utils.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "date_utils.py",
+      "function_name": "process_and_convert_dates",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/date_utils.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "file_analytics.py",
+      "function_name": "get_file_extensions",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/file_analytics.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "file_analytics.py",
+      "function_name": "get_file_info_by_repo_name",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/file_analytics.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "file_analytics.py",
+      "function_name": "get_function_info_by_file_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/file_analytics.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "file_analytics.py",
+      "function_name": "calculate_total_loc",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/file_analytics.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "file_analytics.py",
+      "function_name": "get_file_information",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/file_analytics.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "file_analytics.py",
+      "function_name": "get_parent_directories",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/file_analytics.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "file_analytics.py",
+      "function_name": "construct_files_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/file_analytics.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "individual_analytics.py",
+      "function_name": "get_net_loc_change_for_collaborator",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/individual_analytics.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "individual_analytics.py",
+      "function_name": "get_avatar_url",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/individual_analytics.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "individual_analytics.py",
+      "function_name": "get_loc_changes_for_collaborator",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/individual_analytics.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "individual_analytics.py",
+      "function_name": "commits_gap_individual",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/individual_analytics.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "individual_analytics.py",
+      "function_name": "get_code_review_details_individual",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/individual_analytics.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "individual_analytics.py",
+      "function_name": "get_commit_details_individual",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/individual_analytics.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "individual_analytics.py",
+      "function_name": "get_merges_details_individual",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/individual_analytics.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "individual_analytics.py",
+      "function_name": "get_pull_request_details_individual",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/individual_analytics.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "individual_modal.py",
+      "function_name": "get_file_extensions",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/individual_modal.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "individual_modal.py",
+      "function_name": "get_parent_directories",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/individual_modal.py"
+    },
+    {
+      "complexity": 13,
+      "file_name": "individual_modal.py",
+      "function_name": "list_subdirectories",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/individual_modal.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "notifications.py",
+      "function_name": "create_notification",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/notifications.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "notifications.py",
+      "function_name": "analyze_pull_request_activity",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/notifications.py"
+    },
+    {
+      "complexity": 15,
+      "file_name": "notifications.py",
+      "function_name": "analyze_commit_activity",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/notifications.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_request_analytics.py",
+      "function_name": "filter_and_summarize_pull_requests",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/pull_request_analytics.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_request_analytics.py",
+      "function_name": "get_pull_request_dataframe",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/pull_request_analytics.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_request_analytics.py",
+      "function_name": "get_pull_requests_for_user",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/pull_request_analytics.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "pull_request_analytics.py",
+      "function_name": "transform_data_to_dataframe",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/pull_request_analytics.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "pull_request_analytics.py",
+      "function_name": "format_pull_request_count",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/pull_request_analytics.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "pull_request_analytics.py",
+      "function_name": "format_pull_request_title",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/pull_request_analytics.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_analytics.py",
+      "function_name": "count_active_branches",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/repository_analytics.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_analytics.py",
+      "function_name": "count_branches",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/repository_analytics.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "repository_analytics.py",
+      "function_name": "get_repository_by_name",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/repository_analytics.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "repository_analytics.py",
+      "function_name": "get_repositories_with_collaborators",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/repository_analytics.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "repository_analytics.py",
+      "function_name": "get_net_loc_change_for_team",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/repository_analytics.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "repository_analytics.py",
+      "function_name": "get_loc_changes_for_team",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/repository_analytics.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "utils.py",
+      "function_name": "truncate_string",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/github_data_processing/utils.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "analytics.py",
+      "function_name": "analyze_repository",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/analytics.py"
+    },
+    {
+      "complexity": 14,
+      "file_name": "analytics.py",
+      "function_name": "get_supported_files",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/analytics.py"
+    },
+    {
+      "complexity": 17,
+      "file_name": "analytics.py",
+      "function_name": "save_analysis_results",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/analytics.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "git_blame.py",
+      "function_name": "_hash_dataframe",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/git_blame.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "git_blame.py",
+      "function_name": "plot_commits_distribution",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/git_blame.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "git_blame.py",
+      "function_name": "summarize_commits_per_file",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/git_blame.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "git_blame.py",
+      "function_name": "_cached_dataframe_operation",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/git_blame.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "git_blame.py",
+      "function_name": "filter_by_collaborator",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/git_blame.py"
+    },
+    {
+      "complexity": 22,
+      "file_name": "git_blame.py",
+      "function_name": "perform_git_blame",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/git_blame.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "git_clone.py",
+      "function_name": "construct_github_clone_url",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/git_clone.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "git_clone.py",
+      "function_name": "clone_repository",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/git_clone.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "git_clone.py",
+      "function_name": "onerror",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/git_clone.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "git_clone.py",
+      "function_name": "extract_commits",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/git_clone.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "git_clone.py",
+      "function_name": "process_unmerged_commits",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/git_clone.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "git_clone.py",
+      "function_name": "extract_and_process_commits_parallel",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/gitpy/git_clone.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "env.py",
+      "function_name": "run_migrations_offline",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/migrations/env.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "env.py",
+      "function_name": "get_engine",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/migrations/env.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "env.py",
+      "function_name": "get_engine_url",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/migrations/env.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "env.py",
+      "function_name": "get_metadata",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/migrations/env.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "env.py",
+      "function_name": "run_migrations_online",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/migrations/env.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "d86c3d3e3e24_add_is_merged_column_to_commit.py",
+      "function_name": "downgrade",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/migrations/versions/d86c3d3e3e24_add_is_merged_column_to_commit.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "d86c3d3e3e24_add_is_merged_column_to_commit.py",
+      "function_name": "upgrade",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/migrations/versions/d86c3d3e3e24_add_is_merged_column_to_commit.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "extensions.py",
+      "function_name": "DatabaseOperationQueue::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "extensions.py",
+      "function_name": "Task::__lt__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "extensions.py",
+      "function_name": "adjust_priority_for_github",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "extensions.py",
+      "function_name": "adjust_priority_for_taiga",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "extensions.py",
+      "function_name": "DatabaseOperationQueue::app_context",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "extensions.py",
+      "function_name": "Task::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "extensions.py",
+      "function_name": "refresh_connection",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "extensions.py",
+      "function_name": "DatabaseOperationQueue::stop",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "extensions.py",
+      "function_name": "stop_all_db_queues",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "extensions.py",
+      "function_name": "DatabaseOperationQueue::add_task",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 9,
+      "file_name": "extensions.py",
+      "function_name": "long_operation_with_connection_refresh",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "extensions.py",
+      "function_name": "DatabaseOperationQueue::run",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 14,
+      "file_name": "extensions.py",
+      "function_name": "DatabaseOperationQueue::wait_until_empty",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 14,
+      "file_name": "extensions.py",
+      "function_name": "retry_on_lock",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 18,
+      "file_name": "extensions.py",
+      "function_name": "DatabaseOperationQueue::execute_task",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/extensions.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "taiga_models.py",
+      "function_name": "Project::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/taiga_models.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "taiga_models.py",
+      "function_name": "Project::insert_default_data",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/taiga_models.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile.py",
+      "function_name": "User::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/user_profile.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile.py",
+      "function_name": "User::check_password",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/user_profile.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile.py",
+      "function_name": "User::set_password",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/user_profile.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_profile.py",
+      "function_name": "UserPreferences::set_task_duration_colors",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/user_profile.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "user_profile.py",
+      "function_name": "UserPreferences::add_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/user_profile.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "user_profile.py",
+      "function_name": "UserPreferences::set_active_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/user_profile.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "user_profile.py",
+      "function_name": "UserPreferences::set_taiga_active_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/user_profile.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "user_profile.py",
+      "function_name": "UserPreferences::edit_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/user_profile.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "user_profile.py",
+      "function_name": "UserPreferences::remove_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/models/user_profile.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "heatmap.py",
+      "function_name": "commit_heatmap",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/plots/heatmap.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "heatmap.py",
+      "function_name": "generate_heatmap_calendar",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/plots/heatmap.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "histogram.py",
+      "function_name": "sort_collaborators",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/plots/histogram.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "histogram.py",
+      "function_name": "commit_activity_histogram",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/plots/histogram.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "histogram.py",
+      "function_name": "generate_histogram",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/plots/histogram.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "histogram.py",
+      "function_name": "get_collaborator_color_map_for_repository",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/plots/histogram.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "scatter_plot.py",
+      "function_name": "rug_plot_of_commits_by_user",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/plots/scatter_plot.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "scatter_plot.py",
+      "function_name": "scatter_plot_of_approvals",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/plots/scatter_plot.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "taiga_time_line.py",
+      "function_name": "_calculate_chart_height",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/plots/taiga_time_line.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "taiga_time_line.py",
+      "function_name": "generate_task_distribution_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/plots/taiga_time_line.py"
+    },
+    {
+      "complexity": 188,
+      "file_name": "taiga_time_line.py",
+      "function_name": "generate_task_events_chart",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/plots/taiga_time_line.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "palette.py",
+      "function_name": "get_active_palette",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/preferences/palette.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_dash.py",
+      "function_name": "create_404_message",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/preferences/user_dash.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "user_dash.py",
+      "function_name": "create_header",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/preferences/user_dash.py"
+    },
+    {
+      "complexity": 118,
+      "file_name": "user_dash.py",
+      "function_name": "create_pref_dash_app",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/preferences/user_dash.py"
+    },
+    {
+      "complexity": 48,
+      "file_name": "repo_analytics.py",
+      "function_name": "create_repo_analytics_dash_app",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/repo_analytics.py"
+    },
+    {
+      "complexity": 10,
+      "file_name": "projects_callbacks.py",
+      "function_name": "init_projects_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_callbacks/projects_callbacks.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "stats_table_callbacks.py",
+      "function_name": "get_ordinal_suffix",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_callbacks/stats_table_callbacks.py"
+    },
+    {
+      "complexity": 34,
+      "file_name": "stats_table_callbacks.py",
+      "function_name": "init_stats_table_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_callbacks/stats_table_callbacks.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "taiga_modal_callbacks.py",
+      "function_name": "init_taiga_modal_callback",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_callbacks/taiga_modal_callbacks.py"
+    },
+    {
+      "complexity": 26,
+      "file_name": "timeline_chart_callback.py",
+      "function_name": "init_charts_callbacks",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_callbacks/timeline_chart_callback.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "events.py",
+      "function_name": "get_significant_events_by_sprint_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_data_processing/events.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "member_data.py",
+      "function_name": "get_members_by_project_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_data_processing/member_data.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "member_data.py",
+      "function_name": "get_member_name_by_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_data_processing/member_data.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "member_data.py",
+      "function_name": "get_member_details",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_data_processing/member_data.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "project_data.py",
+      "function_name": "get_all_projects",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_data_processing/project_data.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "project_data.py",
+      "function_name": "get_project_id_from_name",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_data_processing/project_data.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "sprint_data.py",
+      "function_name": "get_sprints_by_project_id",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_data_processing/sprint_data.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "sprint_data.py",
+      "function_name": "get_sprint_details",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_data_processing/sprint_data.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "stats.py",
+      "function_name": "aggregate_tasks_info",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_data_processing/stats.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "stats.py",
+      "function_name": "fetch_tasks_and_members",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_data_processing/stats.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "stats.py",
+      "function_name": "sanitize_name",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_data_processing/stats.py"
+    },
+    {
+      "complexity": 39,
+      "file_name": "task_data.py",
+      "function_name": "fetch_tasks_with_history",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_data_processing/task_data.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "taiga_details.py",
+      "function_name": "create_taiga_app",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_details.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "taiga_details_layout.py",
+      "function_name": "create_taiga_layout",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_layout/taiga_details_layout.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "taiga_footer.py",
+      "function_name": "create_taiga_footer",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_layout/taiga_footer.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "taiga_header.py",
+      "function_name": "create_taiga_header",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/taiga_layout/taiga_header.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "cleanup.py",
+      "function_name": "clear_lru_caches",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/cleanup.py"
+    },
+    {
+      "complexity": 12,
+      "file_name": "cleanup.py",
+      "function_name": "shutdown_cleanup",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/cleanup.py"
+    },
+    {
+      "complexity": 19,
+      "file_name": "cleanup.py",
+      "function_name": "cleanup_cache_directories",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/cleanup.py"
+    },
+    {
+      "complexity": 27,
+      "file_name": "cleanup.py",
+      "function_name": "force_cleanup_semaphores",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/cleanup.py"
+    },
+    {
+      "complexity": 30,
+      "file_name": "cleanup.py",
+      "function_name": "cleanup_multiprocessing_resources",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/cleanup.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "form_handlers.py",
+      "function_name": "update_settings_from_form",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/form_handlers.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "helper.py",
+      "function_name": "on_rm_error",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/helper.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "helper.py",
+      "function_name": "replace_spaces",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/helper.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "helper.py",
+      "function_name": "allowed_file",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/helper.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "helper.py",
+      "function_name": "delete_task_histories_for_project",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/helper.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "helper.py",
+      "function_name": "delete_project",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/helper.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "helper.py",
+      "function_name": "truncate_title",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/helper.py"
+    },
+    {
+      "complexity": 6,
+      "file_name": "helper.py",
+      "function_name": "clear_database",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/helper.py"
+    },
+    {
+      "complexity": 9,
+      "file_name": "helper.py",
+      "function_name": "insert_taiga_defaults",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/helper.py"
+    },
+    {
+      "complexity": 13,
+      "file_name": "helper.py",
+      "function_name": "clean_folder",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/helper.py"
+    },
+    {
+      "complexity": 15,
+      "file_name": "helper.py",
+      "function_name": "delete_repository",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/helper.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "initializer.py",
+      "function_name": "custom_colors_hex",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/initializer.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "initializer.py",
+      "function_name": "generate_default_env",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/initializer.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "initializer.py",
+      "function_name": "taiga_colors_hex",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/initializer.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "progress_bar.py",
+      "function_name": "close_progress_bars",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/progress_bar.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "progress_bar.py",
+      "function_name": "update_console_progress",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/progress_bar.py"
+    },
+    {
+      "complexity": 5,
+      "file_name": "progress_bar.py",
+      "function_name": "update_console_progress_taiga",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/progress_bar.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "progress_bar.py",
+      "function_name": "update_progress",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/progress_bar.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "progress_tracker.py",
+      "function_name": "ProgressTracker::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/progress_tracker.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "progress_tracker.py",
+      "function_name": "ProgressTracker::get_stage_progress",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/progress_tracker.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "progress_tracker.py",
+      "function_name": "ProgressTracker::stage_ranges",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/progress_tracker.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "progress_tracker.py",
+      "function_name": "remove_progress_tracker",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/progress_tracker.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "progress_tracker.py",
+      "function_name": "ProgressTracker::complete_stage",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/progress_tracker.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "progress_tracker.py",
+      "function_name": "ProgressTracker::start_stage",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/progress_tracker.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "progress_tracker.py",
+      "function_name": "get_progress_tracker",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/progress_tracker.py"
+    },
+    {
+      "complexity": 7,
+      "file_name": "progress_tracker.py",
+      "function_name": "ProgressTracker::update_stage_progress",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/progress_tracker.py"
+    },
+    {
+      "complexity": 8,
+      "file_name": "progress_tracker.py",
+      "function_name": "ProgressTracker::get_overall_progress",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/progress_tracker.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "semaphores.py",
+      "function_name": "NoOpContextManager::__enter__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/semaphores.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "semaphores.py",
+      "function_name": "NoOpContextManager::__exit__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/semaphores.py"
+    },
+    {
+      "complexity": 2,
+      "file_name": "semaphores.py",
+      "function_name": "initialize_db_write_semaphore",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/semaphores.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "settings.py",
+      "function_name": "Settings::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/settings.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "settings.py",
+      "function_name": "Settings::load_env",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/settings.py"
+    },
+    {
+      "complexity": 4,
+      "file_name": "settings.py",
+      "function_name": "Settings::save_env",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/settings.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "signals.py",
+      "function_name": "is_sqlite",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/signals.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "thread_manager.py",
+      "function_name": "ThreadManager::__init__",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/thread_manager.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "thread_manager.py",
+      "function_name": "ThreadManager::active_count",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/thread_manager.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "thread_manager.py",
+      "function_name": "ThreadManager::add_thread",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/thread_manager.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "thread_manager.py",
+      "function_name": "ThreadManager::clear_finished",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/thread_manager.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "thread_manager.py",
+      "function_name": "ThreadManager::start_thread",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/thread_manager.py"
+    },
+    {
+      "complexity": 11,
+      "file_name": "thread_manager.py",
+      "function_name": "ThreadManager::wait_for_all",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/utils/thread_manager.py"
+    },
+    {
+      "complexity": 0,
+      "file_name": "__init__.py",
+      "function_name": "init_socketio",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/websocket/__init__.py"
+    },
+    {
+      "complexity": 1,
+      "file_name": "handlers.py",
+      "function_name": "handle_clear_database_request",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/websocket/handlers.py"
+    },
+    {
+      "complexity": 3,
+      "file_name": "handlers.py",
+      "function_name": "handle_card_created",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/websocket/handlers.py"
+    },
+    {
+      "complexity": 15,
+      "file_name": "handlers.py",
+      "function_name": "handle_card_operation",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/websocket/handlers.py"
+    },
+    {
+      "complexity": 19,
+      "file_name": "handlers.py",
+      "function_name": "handle_connection",
+      "path": "qg_bmeddeb_SER402-Team3_ib_0q0bv/websocket/handlers.py"
+    }
+  ],
+  "targets": [
+    "/private/tmp/quickgrade_clones/qg_bmeddeb_SER402-Team3_ib_0q0bv"
+  ]
+}

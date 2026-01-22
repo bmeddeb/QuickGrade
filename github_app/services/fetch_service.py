@@ -7,6 +7,7 @@ import logging
 from datetime import datetime, timezone
 from typing import TYPE_CHECKING, Any
 
+from asgiref.sync import sync_to_async
 from django.conf import settings
 from django.db import transaction
 
@@ -38,31 +39,33 @@ class FetchOrchestrator:
         self.user = user
         self.repo_urls = repo_urls
         self.token = user.access_token
-        self.progress_callback: callable | None = None
+        self.progress_callback: Any | None = None
         self.results: list[dict] = []
+        self.current_repo_index = 0
 
     def _emit_progress(self, repo_url: str, stage: str, detail: str = "") -> None:
         """Emit progress update."""
         if self.progress_callback:
             stage_range = PROGRESS_STAGES.get(stage, (0, 100))
+            # Calculate overall progress based on repo index and stage
+            repo_count = len(self.repo_urls)
+            repo_progress = (self.current_repo_index / repo_count) * 100 if repo_count > 0 else 0
+            stage_contribution = (stage_range[0] + stage_range[1]) / 2 / repo_count if repo_count > 0 else 0
+
             self.progress_callback({
                 "repo_url": repo_url,
                 "stage": stage,
                 "detail": detail,
                 "progress_min": stage_range[0],
                 "progress_max": stage_range[1],
+                "repo_index": self.current_repo_index + 1,
+                "repo_total": repo_count,
+                "overall_progress": min(99, int(repo_progress + stage_contribution)),
             })
+            logger.info(f"[{self.current_repo_index + 1}/{repo_count}] {repo_url}: {stage} - {detail}")
 
-    async def _process_single_repo(self, repo_url: str) -> dict:
-        """Process one repo - clone and API in parallel."""
-        try:
-            owner, repo_name = parse_repo_url(repo_url)
-        except ValueError as e:
-            return {"success": False, "repo_url": repo_url, "error": str(e)}
-
-        self._emit_progress(repo_url, "initializing")
-
-        # Create or get Repository record
+    def _get_or_create_repo(self, owner: str, repo_name: str, repo_url: str):
+        """Sync helper to get or create repository."""
         from github_app.models import Repository
 
         repo_obj, created = Repository.objects.get_or_create(
@@ -80,6 +83,29 @@ class FetchOrchestrator:
             repo_obj.fetch_status = "fetching"
             repo_obj.fetch_error = ""
             repo_obj.save(update_fields=["fetch_status", "fetch_error", "updated_at"])
+
+        return repo_obj
+
+    def _update_repo_status(self, repo_obj, status: str, error: str = ""):
+        """Sync helper to update repository status."""
+        repo_obj.fetch_status = status
+        if error:
+            repo_obj.fetch_error = error
+        if status == "success":
+            repo_obj.last_fetched_at = datetime.now(timezone.utc)
+        repo_obj.save(update_fields=["fetch_status", "fetch_error", "last_fetched_at", "updated_at"])
+
+    async def _process_single_repo(self, repo_url: str) -> dict:
+        """Process one repo - clone and API in parallel."""
+        try:
+            owner, repo_name = parse_repo_url(repo_url)
+        except ValueError as e:
+            return {"success": False, "repo_url": repo_url, "error": str(e)}
+
+        self._emit_progress(repo_url, "initializing")
+
+        # Create or get Repository record (run in thread)
+        repo_obj = await sync_to_async(self._get_or_create_repo)(owner, repo_name, repo_url)
 
         try:
             # Run clone and API fetch in parallel
@@ -118,21 +144,29 @@ class FetchOrchestrator:
                 logger.error(f"API fetch failed for {repo_url}: {api_data}")
                 api_data = {"error": str(api_data)}
 
-            # Run code analysis if clone succeeded
+            # Run code analysis if clone succeeded (with timeout)
             analysis_data = None
             if clone_data.get("success") and clone_data.get("temp_path"):
-                self._emit_progress(repo_url, "analyzing_code")
+                self._emit_progress(repo_url, "analyzing_code", "Running Lizard complexity analysis...")
                 try:
                     analyzer = AnalysisService(clone_data["temp_path"])
-                    analysis_data = await asyncio.to_thread(analyzer.analyze_all)
+                    # 5 minute timeout for analysis
+                    analysis_data = await asyncio.wait_for(
+                        asyncio.to_thread(analyzer.analyze_all),
+                        timeout=300.0
+                    )
+                    self._emit_progress(repo_url, "analyzing_code", f"Analysis complete: {analysis_data.get('total_files', 0)} files")
+                except asyncio.TimeoutError:
+                    logger.warning(f"Analysis timed out for {repo_url} after 5 minutes")
+                    self._emit_progress(repo_url, "analyzing_code", "Analysis timed out, skipping...")
                 except Exception as e:
                     logger.exception(f"Analysis failed for {repo_url}: {e}")
+                    self._emit_progress(repo_url, "analyzing_code", f"Analysis failed: {e}")
 
             # Reconcile and save data
             self._emit_progress(repo_url, "reconciling")
 
-            result = await asyncio.to_thread(
-                self._save_all_data,
+            result = await sync_to_async(self._save_all_data)(
                 repo_obj,
                 clone_data,
                 api_data,
@@ -142,12 +176,10 @@ class FetchOrchestrator:
             # Cleanup clone directory
             self._emit_progress(repo_url, "cleanup")
             if clone_data.get("success"):
-                clone_service.cleanup()
+                await asyncio.to_thread(clone_service.cleanup)
 
             # Update repository status
-            repo_obj.fetch_status = "success"
-            repo_obj.last_fetched_at = datetime.now(timezone.utc)
-            repo_obj.save(update_fields=["fetch_status", "last_fetched_at", "updated_at"])
+            await sync_to_async(self._update_repo_status)(repo_obj, "success")
 
             return {
                 "success": True,
@@ -159,9 +191,7 @@ class FetchOrchestrator:
 
         except Exception as e:
             logger.exception(f"Failed to process {repo_url}: {e}")
-            repo_obj.fetch_status = "failed"
-            repo_obj.fetch_error = str(e)
-            repo_obj.save(update_fields=["fetch_status", "fetch_error", "updated_at"])
+            await sync_to_async(self._update_repo_status)(repo_obj, "failed", str(e))
             return {
                 "success": False,
                 "repo_url": repo_url,
@@ -412,13 +442,20 @@ class FetchOrchestrator:
         """Process all repos with controlled concurrency."""
         clone_workers = getattr(settings, "CLONE_WORKERS", 4)
         semaphore = asyncio.Semaphore(clone_workers)
+        completed_count = 0
 
-        async def bounded_task(url: str) -> dict:
+        async def bounded_task(idx: int, url: str) -> dict:
+            nonlocal completed_count
+            self.current_repo_index = idx
             async with semaphore:
-                return await self._process_single_repo(url)
+                logger.info(f"Starting repo {idx + 1}/{len(self.repo_urls)}: {url}")
+                result = await self._process_single_repo(url)
+                completed_count += 1
+                logger.info(f"Completed repo {idx + 1}/{len(self.repo_urls)}: {url} (total completed: {completed_count})")
+                return result
 
         self.results = await asyncio.gather(
-            *[bounded_task(url) for url in self.repo_urls],
+            *[bounded_task(i, url) for i, url in enumerate(self.repo_urls)],
             return_exceptions=True,
         )
 
@@ -426,6 +463,7 @@ class FetchOrchestrator:
         processed_results = []
         for i, result in enumerate(self.results):
             if isinstance(result, Exception):
+                logger.error(f"Repo {self.repo_urls[i]} failed with exception: {result}")
                 processed_results.append({
                     "success": False,
                     "repo_url": self.repo_urls[i],

@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Upload - QuickGrade{% endblock %}
 {% block page_id %}upload{% endblock %}
@@ -7,11 +8,50 @@
 {% block content %}
 <div class="mb-8">
   <h1 class="text-2xl font-semibold">Upload File</h1>
-  <p class="mt-2 text-[var(--paper-muted)]">Import repository and project slugs from CSV or Excel</p>
+  <p class="mt-2 text-[var(--paper-muted)]">Choose a platform to import repository or project data</p>
 </div>
 
-<!-- Placeholder for E11: File Upload -->
-<div class="paper-card p-6">
-  <p class="text-[var(--paper-muted)]">Coming in Sprint 8 (E11-001)</p>
+<div class="grid gap-6 md:grid-cols-2 max-w-3xl">
+  <!-- GitHub Card -->
+  <a href="{% url 'github:fetch' %}" class="paper-card p-6 hover:shadow-lg transition-shadow group">
+    <div class="flex items-center gap-4 mb-4">
+      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[#24292e] text-white">
+        <i class="fa fa-github text-2xl"></i>
+      </div>
+      <div>
+        <h2 class="text-lg font-semibold group-hover:text-[var(--paper-primary)]">GitHub</h2>
+        <p class="text-sm text-[var(--paper-muted)]">Import repository data</p>
+      </div>
+    </div>
+    <p class="text-sm text-[var(--paper-muted)]">
+      Upload an Excel file with GitHub repository URLs or paste them directly.
+      Fetches commits, pull requests, issues, and code analysis.
+    </p>
+    <div class="mt-4 flex items-center text-sm text-[var(--paper-primary)]">
+      <span>Go to GitHub Fetch</span>
+      <i class="nc-icon nc-minimal-right ml-2"></i>
+    </div>
+  </a>
+
+  <!-- Taiga Card -->
+  <a href="{% url 'taiga:fetch' %}" class="paper-card p-6 hover:shadow-lg transition-shadow group">
+    <div class="flex items-center gap-4 mb-4">
+      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[#70c542] text-white">
+        <img src="{% static 'img/taiga.svg' %}" alt="Taiga" class="h-6 w-6">
+      </div>
+      <div>
+        <h2 class="text-lg font-semibold group-hover:text-[var(--paper-primary)]">Taiga</h2>
+        <p class="text-sm text-[var(--paper-muted)]">Import project data</p>
+      </div>
+    </div>
+    <p class="text-sm text-[var(--paper-muted)]">
+      Upload an Excel file with Taiga project slugs or paste them directly.
+      Fetches sprints, tasks, user stories, and team data.
+    </p>
+    <div class="mt-4 flex items-center text-sm text-[var(--paper-primary)]">
+      <span>Go to Taiga Fetch</span>
+      <i class="nc-icon nc-minimal-right ml-2"></i>
+    </div>
+  </a>
 </div>
 {% endblock %}
