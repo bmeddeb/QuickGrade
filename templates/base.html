@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="{% static 'css/nucleo.css' %}">
   <script defer src="{% static 'js/app.js' %}"></script>
   <script defer src="{% static 'js/alpine.js' %}"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   {% block extra_head %}{% endblock %}
 </head>
 <body data-page="{% block page_id %}dashboard{% endblock %}" x-data="layout()" class="text-[var(--paper-text)] antialiased">
@@ -49,7 +48,8 @@
             <i class="nc-icon nc-minimal-down ml-auto text-xs transition-transform shrink-0" :class="open ? 'rotate-180' : ''"></i>
           </button>
           <div class="sidebar-submenu mt-1 ml-4 space-y-1 border-l border-white/20 pl-4" x-show="open" x-transition x-cloak>
-            <a class="sidebar-sublink" href="{% url 'github:dashboard' %}">Dashboard</a>
+            <a class="sidebar-sublink" href="{% url 'github:dashboard' %}">Repositories</a>
+            <a class="sidebar-sublink" href="{% url 'github:analytics' %}">Analytics</a>
             <a class="sidebar-sublink" href="{% url 'github:fetch' %}">Fetch Data</a>
           </div>
         </div>

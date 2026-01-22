@@ -119,7 +119,7 @@ def dashboard(request):
 
     repositories = (
         Repository.objects.filter(user=request.user)
-        .prefetch_related("commits", "pull_requests", "issues")
+        .prefetch_related("commits", "pull_requests", "issues", "repository_collaborators")
         .order_by("-updated_at")[:20]
     )
 
@@ -400,10 +400,14 @@ def repository_analysis(request, repo_id: int):
 @login_required
 @require_GET
 def analytics_dashboard(request):
-    """Analytics dashboard with charts and visualizations."""
+    """Analytics dashboard - repository selection."""
     from .models import Repository
 
-    repositories = Repository.objects.filter(user=request.user).order_by("full_name")
+    repositories = (
+        Repository.objects.filter(user=request.user)
+        .prefetch_related("commits", "pull_requests", "issues", "repository_collaborators")
+        .order_by("full_name")
+    )
 
     context = {
         "repositories": repositories,

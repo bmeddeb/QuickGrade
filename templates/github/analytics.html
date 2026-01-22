@@ -1,20 +1,20 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}GitHub Dashboard - QuickGrade{% endblock %}
-{% block page_id %}github-dashboard{% endblock %}
-{% block header_subtitle %}GitHub Dashboard{% endblock %}
+{% block title %}Analytics - QuickGrade{% endblock %}
+{% block page_id %}github-analytics{% endblock %}
+{% block header_subtitle %}Analytics{% endblock %}
 
 {% block content %}
 <div class="mb-8 flex items-center justify-between">
   <div>
-    <h1 class="text-2xl font-semibold">GitHub Repositories</h1>
-    <p class="mt-2 text-[var(--paper-muted)]">Manage and view your imported repositories</p>
+    <h1 class="text-2xl font-semibold">Analytics</h1>
+    <p class="mt-2 text-[var(--paper-muted)]">Select a repository to view detailed analytics</p>
   </div>
   <div class="flex gap-3">
-    <a href="{% url 'github:analytics' %}" class="paper-btn paper-btn-outline">
-      <i class="nc-icon nc-chart-bar-32 mr-2"></i>
-      Analytics
+    <a href="{% url 'github:dashboard' %}" class="paper-btn paper-btn-outline">
+      <i class="nc-icon nc-bank mr-2"></i>
+      Dashboard
     </a>
     <a href="{% url 'github:fetch' %}" class="paper-btn paper-btn-primary">
       <i class="nc-icon nc-cloud-download-93 mr-2"></i>
@@ -24,61 +24,7 @@
 </div>
 
 {% if repositories %}
-<!-- Stats Cards -->
-<div class="grid gap-6 md:grid-cols-4 mb-8">
-  <div class="paper-card p-6">
-    <div class="flex items-center justify-between">
-      <div>
-        <p class="text-sm text-[var(--paper-muted)]">Repositories</p>
-        <p class="text-3xl font-bold mt-1">{{ total_repos }}</p>
-      </div>
-      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--paper-primary)]/10 text-[var(--paper-primary)]">
-        <i class="fa fa-github text-xl"></i>
-      </div>
-    </div>
-  </div>
-
-  <div class="paper-card p-6">
-    <div class="flex items-center justify-between">
-      <div>
-        <p class="text-sm text-[var(--paper-muted)]">Total Commits</p>
-        <p class="text-3xl font-bold mt-1">{{ total_commits|default:0 }}</p>
-      </div>
-      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--paper-info)]/10 text-[var(--paper-info)]">
-        <i class="fa fa-code-fork text-xl"></i>
-      </div>
-    </div>
-  </div>
-
-  <div class="paper-card p-6">
-    <div class="flex items-center justify-between">
-      <div>
-        <p class="text-sm text-[var(--paper-muted)]">Pull Requests</p>
-        <p class="text-3xl font-bold mt-1">{{ total_prs|default:0 }}</p>
-      </div>
-      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--paper-success)]/10 text-[var(--paper-success)]">
-        <i class="fa fa-code-pull-request text-xl"></i>
-      </div>
-    </div>
-  </div>
-
-  <div class="paper-card p-6">
-    <div class="flex items-center justify-between">
-      <div>
-        <p class="text-sm text-[var(--paper-muted)]">Issues</p>
-        <p class="text-3xl font-bold mt-1">{{ total_issues|default:0 }}</p>
-      </div>
-      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--paper-warning)]/10 text-[var(--paper-warning)]">
-        <i class="fa fa-exclamation-circle text-xl"></i>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- Repository Cards -->
-<div class="mb-4">
-  <h2 class="text-lg font-semibold">Repositories</h2>
-</div>
 <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
   {% for repo in repositories %}
   <div class="paper-card overflow-hidden flex flex-col h-full" x-data="{ showDeleteModal: false }">
@@ -104,14 +50,14 @@
         </button>
       </div>
     </div>
-    <div class="paper-card-body flex-1">
-      <a href="{% url 'github:repository_detail' repo.id %}" class="font-semibold hover:text-[var(--paper-primary)] text-base">
+    <a href="{% url 'github:repository_detail' repo.id %}" class="paper-card-body flex-1 hover:bg-[var(--paper-bg)] transition-colors">
+      <span class="font-semibold text-base hover:text-[var(--paper-primary)]">
         {{ repo.name }}
-      </a>
+      </span>
       <p class="text-sm text-[var(--paper-muted)] mt-1 line-clamp-2 h-10">
         {% if repo.description %}{{ repo.description|truncatechars:80 }}{% else %}No description{% endif %}
       </p>
-    </div>
+    </a>
     <div class="border-t border-[var(--paper-border)] grid grid-cols-4 divide-x divide-[var(--paper-border)] mt-auto">
       <div class="py-3 text-center">
         <p class="font-bold text-sm">{{ repo.commits.count }}</p>
@@ -157,12 +103,11 @@
 <!-- Empty State -->
 <div class="paper-card p-12 text-center">
   <div class="flex h-20 w-20 items-center justify-center rounded-full bg-[var(--paper-bg)] mx-auto mb-6">
-    <i class="fa fa-github text-4xl text-[var(--paper-muted)]"></i>
+    <i class="nc-icon nc-chart-bar-32 text-4xl text-[var(--paper-muted)]"></i>
   </div>
   <h2 class="text-xl font-semibold mb-2">No Repositories Yet</h2>
   <p class="text-[var(--paper-muted)] mb-6 max-w-md mx-auto">
-    Get started by fetching data from your GitHub repositories.
-    You can upload an Excel file or paste repository URLs.
+    Get started by fetching data from your GitHub repositories to view analytics.
   </p>
   <a href="{% url 'github:fetch' %}" class="paper-btn paper-btn-primary">
     <i class="nc-icon nc-cloud-download-93 mr-2"></i>
