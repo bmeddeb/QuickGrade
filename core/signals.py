@@ -1,8 +1,9 @@
 """
-Signal handlers for OAuth social login.
+Signal handlers for OAuth social login and user actions.
 """
 
 from allauth.socialaccount.signals import pre_social_login, social_account_added
+from django.contrib.auth.signals import user_logged_in
 from django.dispatch import receiver
 
 
@@ -50,3 +51,11 @@ def populate_user_from_github(sender, request, sociallogin, **kwargs):
     if token:
         user.access_token = token
     user.save(update_fields=["github_id", "avatar_url", "bio", "access_token"])
+
+
+@receiver(user_logged_in)
+def cleanup_orphaned_clones(sender, request, user, **kwargs):
+    """Clean up any orphaned clone directories on user login."""
+    from github_app.services.cleanup_service import CleanupService
+
+    CleanupService.cleanup_user_clones(user)

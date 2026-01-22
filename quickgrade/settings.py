@@ -155,5 +155,11 @@ GITHUB_CONCURRENT_LIMIT = env("GITHUB_CONCURRENT_LIMIT")
 TAIGA_CONCURRENT_LIMIT = env("TAIGA_CONCURRENT_LIMIT")
 TAIGA_API_URL = env("TAIGA_API_URL", default="https://api.taiga.io/api/v1")
 
+# GitHub Fetch Settings
+CLONE_WORKERS = env.int("CLONE_WORKERS", default=4)  # Concurrent repo clones
+API_CONCURRENCY = env.int("API_CONCURRENCY", default=20)  # Concurrent API requests
+RATE_LIMIT_THRESHOLD = env.int("RATE_LIMIT_THRESHOLD", default=500)  # Wait when remaining < this
+CLONE_TEMP_DIR = env("CLONE_TEMP_DIR", default="/tmp/quickgrade_clones")
+
 # Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"

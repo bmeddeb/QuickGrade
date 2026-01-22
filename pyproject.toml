@@ -30,6 +30,10 @@ dependencies = [
 
     # Code Analysis
     "lizard>=1.17",
+    "complexipy>=0.4",
+
+    # Git Operations
+    "gitpython>=3.1",
 
     # CLI
     "rich>=13.9",
