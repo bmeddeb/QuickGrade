@@ -8,13 +8,19 @@
 {% block content %}
 <div class="mb-8 flex items-center justify-between">
   <div>
-    <h1 class="text-2xl font-semibold">GitHub Dashboard</h1>
-    <p class="mt-2 text-[var(--paper-muted)]">Analyze commits, pull requests, and collaboration</p>
+    <h1 class="text-2xl font-semibold">GitHub Repositories</h1>
+    <p class="mt-2 text-[var(--paper-muted)]">Manage and view your imported repositories</p>
   </div>
-  <a href="{% url 'github:fetch' %}" class="paper-btn paper-btn-primary">
-    <i class="nc-icon nc-cloud-download-93 mr-2"></i>
-    Fetch Data
-  </a>
+  <div class="flex gap-3">
+    <a href="{% url 'github:analytics' %}" class="paper-btn paper-btn-outline">
+      <i class="nc-icon nc-chart-bar-32 mr-2"></i>
+      Analytics
+    </a>
+    <a href="{% url 'github:fetch' %}" class="paper-btn paper-btn-primary">
+      <i class="nc-icon nc-cloud-download-93 mr-2"></i>
+      Fetch Data
+    </a>
+  </div>
 </div>
 
 {% if repositories %}
@@ -69,46 +75,78 @@
   </div>
 </div>
 
-<!-- Repository List -->
-<div class="paper-card">
-  <div class="p-6 border-b border-[var(--paper-border)]">
-    <h2 class="text-lg font-semibold">Repositories</h2>
-  </div>
-  <div class="divide-y divide-[var(--paper-border)]">
-    {% for repo in repositories %}
-    <div class="p-6 hover:bg-[var(--paper-bg)] transition-colors">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-4">
-          <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#24292e] text-white">
-            <i class="fa fa-github"></i>
-          </div>
-          <div>
-            <a href="{% url 'github:repository_detail' repo.id %}" class="font-semibold hover:text-[var(--paper-primary)]">
-              {{ repo.full_name }}
-            </a>
-            <p class="text-sm text-[var(--paper-muted)]">
-              {% if repo.description %}{{ repo.description|truncatechars:60 }}{% else %}No description{% endif %}
-            </p>
-          </div>
+<!-- Repository Cards -->
+<div class="mb-4">
+  <h2 class="text-lg font-semibold">Repositories</h2>
+</div>
+<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+  {% for repo in repositories %}
+  <div class="paper-card overflow-hidden flex flex-col h-full" x-data="{ showDeleteModal: false }">
+    <div class="{% if repo.fetch_status == 'success' %}bg-[var(--paper-success)]/10{% elif repo.fetch_status == 'failed' %}bg-[var(--paper-danger)]/10{% elif repo.fetch_status == 'fetching' %}bg-[var(--paper-info)]/10{% else %}bg-[var(--paper-warning)]/10{% endif %} px-4 py-2 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <i class="fa fa-github text-xl text-[#24292e]"></i>
+        <span class="text-sm font-semibold">{{ repo.owner }}</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="{% if repo.fetch_status == 'success' %}text-[var(--paper-success)]{% elif repo.fetch_status == 'failed' %}text-[var(--paper-danger)]{% elif repo.fetch_status == 'fetching' %}text-[var(--paper-info)]{% else %}text-[var(--paper-warning)]{% endif %}" title="{% if repo.fetch_status == 'success' %}Synced{% elif repo.fetch_status == 'failed' %}Sync failed{% elif repo.fetch_status == 'fetching' %}Syncing...{% else %}Pending{% endif %}">
+          {% if repo.fetch_status == 'success' %}
+          <i class="nc-icon nc-check-2"></i>
+          {% elif repo.fetch_status == 'failed' %}
+          <i class="nc-icon nc-simple-remove"></i>
+          {% elif repo.fetch_status == 'fetching' %}
+          <i class="nc-icon nc-refresh-69 animate-spin"></i>
+          {% else %}
+          <i class="nc-icon nc-time-alarm"></i>
+          {% endif %}
+        </span>
+        <button @click="showDeleteModal = true" class="text-[var(--paper-muted)] hover:text-[var(--paper-danger)] transition-colors" title="Delete repository">
+          <i class="nc-icon nc-simple-remove"></i>
+        </button>
+      </div>
+    </div>
+    <div class="paper-card-body flex-1">
+      <a href="{% url 'github:repository_detail' repo.id %}" class="font-semibold hover:text-[var(--paper-primary)] text-base">
+        {{ repo.name }}
+      </a>
+      <p class="text-sm text-[var(--paper-muted)] mt-1 line-clamp-2 h-10">
+        {% if repo.description %}{{ repo.description|truncatechars:80 }}{% else %}No description{% endif %}
+      </p>
+    </div>
+    <div class="border-t border-[var(--paper-border)] grid grid-cols-3 divide-x divide-[var(--paper-border)] mt-auto">
+      <div class="py-3 text-center">
+        <p class="font-bold text-sm">{{ repo.commits.count }}</p>
+        <p class="text-[10px] text-[var(--paper-muted)]">Commits</p>
+      </div>
+      <div class="py-3 text-center">
+        <p class="font-bold text-sm">{{ repo.pull_requests.count }}</p>
+        <p class="text-[10px] text-[var(--paper-muted)]">PRs</p>
+      </div>
+      <div class="py-3 text-center">
+        <p class="font-bold text-sm">{{ repo.issues.count }}</p>
+        <p class="text-[10px] text-[var(--paper-muted)]">Issues</p>
+      </div>
+    </div>
+    <!-- Delete Confirmation Modal -->
+    <div x-show="showDeleteModal" x-transition.opacity class="fixed inset-0 z-50 flex items-center justify-center bg-black/50" @click.self="showDeleteModal = false" x-cloak>
+      <div class="paper-card w-full max-w-md mx-4" @click.stop>
+        <div class="paper-card-header">
+          <h3 class="paper-card-title text-[var(--paper-danger)]">Delete Repository</h3>
         </div>
-        <div class="flex items-center gap-6 text-sm text-[var(--paper-muted)]">
-          <span title="Commits"><i class="fa fa-code-fork mr-1"></i>{{ repo.commits.count }}</span>
-          <span title="Pull Requests"><i class="fa fa-code-pull-request mr-1"></i>{{ repo.pull_requests.count }}</span>
-          <span title="Issues"><i class="fa fa-exclamation-circle mr-1"></i>{{ repo.issues.count }}</span>
-          <span class="{% if repo.fetch_status == 'success' %}text-[var(--paper-success)]{% elif repo.fetch_status == 'failed' %}text-[var(--paper-danger)]{% else %}text-[var(--paper-warning)]{% endif %}">
-            {% if repo.fetch_status == 'success' %}
-            <i class="nc-icon nc-check-2"></i>
-            {% elif repo.fetch_status == 'failed' %}
-            <i class="nc-icon nc-simple-remove"></i>
-            {% else %}
-            <i class="nc-icon nc-time-alarm"></i>
-            {% endif %}
-          </span>
+        <div class="paper-card-body">
+          <p class="text-sm text-[var(--paper-muted)]">Are you sure you want to delete <strong class="text-[var(--paper-text)]">{{ repo.full_name }}</strong>?</p>
+          <p class="text-sm text-[var(--paper-muted)] mt-2">This will permanently remove the repository and all associated data (commits, pull requests, issues, etc.).</p>
+        </div>
+        <div class="paper-card-footer flex justify-end gap-2">
+          <button @click="showDeleteModal = false" class="paper-btn paper-btn-sm">Cancel</button>
+          <form method="post" action="{% url 'github:repository_delete' repo.id %}" class="inline">
+            {% csrf_token %}
+            <button type="submit" class="paper-btn paper-btn-sm paper-btn-danger">Delete</button>
+          </form>
         </div>
       </div>
     </div>
-    {% endfor %}
   </div>
+  {% endfor %}
 </div>
 
 {% else %}

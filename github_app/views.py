@@ -395,3 +395,38 @@ def repository_analysis(request, repo_id: int):
         "file_analyses": file_analyses,
     }
     return render(request, "github/analysis.html", context)
+
+
+@login_required
+@require_GET
+def analytics_dashboard(request):
+    """Analytics dashboard with charts and visualizations."""
+    from .models import Repository
+
+    repositories = Repository.objects.filter(user=request.user).order_by("full_name")
+
+    context = {
+        "repositories": repositories,
+    }
+    return render(request, "github/analytics.html", context)
+
+
+@login_required
+@require_http_methods(["POST"])
+def repository_delete(request, repo_id: int):
+    """Delete a repository and all related data."""
+    from django.shortcuts import get_object_or_404, redirect
+
+    from .models import Repository
+
+    repository = get_object_or_404(Repository, id=repo_id, user=request.user)
+    repo_name = repository.full_name
+    repository.delete()
+
+    logger.info(f"User {request.user.id} deleted repository: {repo_name}")
+
+    # If AJAX request, return JSON response
+    if request.headers.get("X-Requested-With") == "XMLHttpRequest":
+        return JsonResponse({"success": True, "message": f"Repository {repo_name} deleted"})
+
+    return redirect("github:dashboard")
