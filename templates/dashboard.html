@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Dashboard - QuickGrade{% endblock %}
+{% block page_id %}dashboard{% endblock %}
+{% block header_subtitle %}Overview{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+  <h1 class="text-2xl font-semibold">Welcome back, {{ user.username|default:user.email }}</h1>
+  <p class="mt-2 text-[var(--paper-muted)]">GitHub & Taiga Analytics Dashboard</p>
+</div>
+
+<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+  <!-- GitHub Card -->
+  <div class="paper-card p-6">
+    <div class="flex items-center gap-4">
+      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[rgba(81,203,206,0.2)] text-[var(--paper-primary)]">
+        <img src="{% static 'img/github.svg' %}" alt="GitHub" class="h-6 w-6">
+      </div>
+      <div>
+        <h3 class="font-semibold">GitHub Analytics</h3>
+        <p class="text-sm text-[var(--paper-muted)]">Commits, PRs, Reviews</p>
+      </div>
+    </div>
+    <div class="mt-4 flex gap-2">
+      <a href="{% url 'github:dashboard' %}" class="paper-btn paper-btn-primary flex-1">Dashboard</a>
+      <a href="{% url 'github:fetch' %}" class="paper-btn paper-btn-outline flex-1">Fetch Data</a>
+    </div>
+  </div>
+
+  <!-- Taiga Card -->
+  <div class="paper-card p-6">
+    <div class="flex items-center gap-4">
+      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[rgba(107,208,152,0.2)]">
+        <img src="{% static 'img/taiga.svg' %}" alt="Taiga" class="h-6 w-6">
+      </div>
+      <div>
+        <h3 class="font-semibold">Taiga Analytics</h3>
+        <p class="text-sm text-[var(--paper-muted)]">Tasks, Sprints, Members</p>
+      </div>
+    </div>
+    <div class="mt-4 flex gap-2">
+      <a href="{% url 'taiga:dashboard' %}" class="paper-btn paper-btn-success flex-1">Dashboard</a>
+      <a href="{% url 'taiga:fetch' %}" class="paper-btn paper-btn-outline flex-1">Fetch Data</a>
+    </div>
+  </div>
+
+  <!-- Upload Card -->
+  <div class="paper-card p-6">
+    <div class="flex items-center gap-4">
+      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[rgba(251,198,88,0.2)] text-[var(--paper-warning)]">
+        <i class="nc-icon nc-cloud-upload-94 text-xl"></i>
+      </div>
+      <div>
+        <h3 class="font-semibold">Upload File</h3>
+        <p class="text-sm text-[var(--paper-muted)]">Import CSV or Excel</p>
+      </div>
+    </div>
+    <div class="mt-4">
+      <a href="{% url 'upload' %}" class="paper-btn paper-btn-warning w-full">Upload</a>
+    </div>
+  </div>
+</div>
+
+<!-- Quick Stats Placeholder -->
+<div class="mt-8">
+  <h2 class="text-lg font-semibold">Quick Overview</h2>
+  <div class="mt-4 grid gap-4 md:grid-cols-4">
+    <div class="paper-card p-4">
+      <p class="text-sm text-[var(--paper-muted)]">Repositories</p>
+      <p class="text-2xl font-semibold">0</p>
+    </div>
+    <div class="paper-card p-4">
+      <p class="text-sm text-[var(--paper-muted)]">Total Commits</p>
+      <p class="text-2xl font-semibold">0</p>
+    </div>
+    <div class="paper-card p-4">
+      <p class="text-sm text-[var(--paper-muted)]">Taiga Projects</p>
+      <p class="text-2xl font-semibold">0</p>
+    </div>
+    <div class="paper-card p-4">
+      <p class="text-sm text-[var(--paper-muted)]">Total Tasks</p>
+      <p class="text-2xl font-semibold">0</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

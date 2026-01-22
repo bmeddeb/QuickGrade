@@ -1,0 +1,166 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}QuickGrade{% endblock %}</title>
+  <link rel="icon" type="image/png" href="{% static 'img/favicon.ico' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/app.css' %}">
+  <link rel="stylesheet" href="{% static 'css/nucleo.css' %}">
+  <script defer src="{% static 'js/app.js' %}"></script>
+  <script defer src="{% static 'js/alpine.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  {% block extra_head %}{% endblock %}
+</head>
+<body data-page="{% block page_id %}dashboard{% endblock %}" x-data="layout()" class="text-[var(--paper-text)] antialiased">
+  <a href="#main-content" class="paper-skip-link">Skip to content</a>
+  <div class="flex min-h-screen">
+    <div class="fixed inset-0 bg-black/40 lg:hidden" x-show="sidebarOpen" x-transition.opacity @click="sidebarOpen = false"></div>
+    <!-- Sidebar -->
+    <aside class="sidebar-modern fixed inset-y-0 left-0 z-40 w-56 -translate-x-full bg-[var(--paper-sidebar)] text-white transition-all duration-300 lg:static lg:translate-x-0 lg:flex lg:flex-col" :class="{'translate-x-0': sidebarOpen, '-translate-x-full': !sidebarOpen, 'sidebar-mini': sidebarMini}">
+      <!-- Logo -->
+      <div class="px-6 py-6">
+        <div class="flex items-center gap-3">
+          <img src="{% static 'img/QuickGrade-logo.png' %}" alt="QuickGrade" class="h-11 w-11 shrink-0 rounded-full object-cover">
+          <div class="sidebar-text overflow-hidden whitespace-nowrap transition-all duration-300">
+            <p class="text-xs font-semibold uppercase tracking-wider">QuickGrade</p>
+            <p class="text-[10px] text-white/60">Analytics Dashboard</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Navigation -->
+      <nav class="flex-1 overflow-y-auto px-3 pb-6">
+        <a class="sidebar-link" href="{% url 'home' %}">
+          <i class="nc-icon nc-bank shrink-0"></i>
+          <span class="sidebar-text">Home</span>
+        </a>
+
+        <div x-data="collapse(true)" class="mt-2">
+          <button class="sidebar-link" type="button" @click="toggle()">
+            <i class="fa fa-github shrink-0"></i>
+            <span class="sidebar-text">GitHub</span>
+            <i class="nc-icon nc-minimal-down ml-auto text-xs transition-transform shrink-0" :class="open ? 'rotate-180' : ''"></i>
+          </button>
+          <div class="sidebar-submenu mt-1 ml-4 space-y-1 border-l border-white/20 pl-4" x-show="open" x-transition x-cloak>
+            <a class="sidebar-sublink" href="{% url 'github:dashboard' %}">Dashboard</a>
+            <a class="sidebar-sublink" href="{% url 'github:fetch' %}">Fetch Data</a>
+          </div>
+        </div>
+
+        <div x-data="collapse(false)" class="mt-2">
+          <button class="sidebar-link" type="button" @click="toggle()">
+            <img src="{% static 'img/taiga.svg' %}" alt="Taiga" class="h-4 w-4 shrink-0">
+            <span class="sidebar-text">Taiga</span>
+            <i class="nc-icon nc-minimal-down ml-auto text-xs transition-transform shrink-0" :class="open ? 'rotate-180' : ''"></i>
+          </button>
+          <div class="sidebar-submenu mt-1 ml-4 space-y-1 border-l border-white/20 pl-4" x-show="open" x-transition x-cloak>
+            <a class="sidebar-sublink" href="{% url 'taiga:dashboard' %}">Dashboard</a>
+            <a class="sidebar-sublink" href="{% url 'taiga:fetch' %}">Fetch Data</a>
+          </div>
+        </div>
+
+        <a class="sidebar-link mt-2" href="{% url 'upload' %}">
+          <i class="nc-icon nc-cloud-upload-94 shrink-0"></i>
+          <span class="sidebar-text">Upload File</span>
+        </a>
+        <a class="sidebar-link" href="{% url 'preferences' %}">
+          <i class="nc-icon nc-settings-gear-65 shrink-0"></i>
+          <span class="sidebar-text">Preferences</span>
+        </a>
+      </nav>
+    </aside>
+
+    <div class="flex min-h-screen flex-1 flex-col">
+      <header class="sticky top-0 z-30 bg-[var(--paper-bg)]/90 backdrop-blur">
+        <div class="flex items-center justify-between px-6 py-4">
+          <div class="flex items-center gap-3">
+            <!-- Mobile menu toggle -->
+            <button class="flex h-10 w-10 flex-col items-center justify-center gap-1 rounded-full bg-white/70 text-[var(--paper-text)] shadow lg:hidden" type="button" @click="sidebarOpen = !sidebarOpen" aria-label="Toggle navigation">
+              <span class="h-0.5 w-5 rounded-full bg-[var(--paper-text)]"></span>
+              <span class="h-0.5 w-5 rounded-full bg-[var(--paper-text)]"></span>
+              <span class="h-0.5 w-5 rounded-full bg-[var(--paper-text)]"></span>
+            </button>
+            <!-- Sidebar minimize toggle (desktop only) -->
+            <button class="hidden lg:flex h-10 w-10 items-center justify-center rounded-full bg-white shadow transition hover:shadow-md" type="button" @click="sidebarMini = !sidebarMini" aria-label="Toggle sidebar">
+              <i class="nc-icon nc-minimal-left text-[var(--paper-text)] transition-transform duration-300" :class="sidebarMini ? 'rotate-180' : ''"></i>
+            </button>
+            <div class="relative hidden md:block">
+              <span class="absolute inset-y-0 left-3 flex items-center pointer-events-none">
+                <i class="nc-icon nc-zoom-split text-sm text-[var(--paper-muted)]"></i>
+              </span>
+              <input class="h-10 w-64 rounded-full border border-[var(--paper-border)] bg-white pl-9 pr-4 text-sm outline-none transition focus:border-[var(--paper-primary)] focus:ring-2 focus:ring-[var(--paper-primary)]/20" type="text" placeholder="Search..." aria-label="Search">
+            </div>
+            <div class="md:hidden">
+              <p class="text-sm font-semibold">QuickGrade</p>
+              <p class="text-xs text-[var(--paper-muted)]">{% block header_subtitle %}Overview{% endblock %}</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            {% if user.is_authenticated %}
+            <div class="relative" @click.outside="notificationsOpen = false">
+              <button class="flex h-10 w-10 items-center justify-center rounded-full bg-white/70 text-[var(--paper-text)] shadow" type="button" @click="notificationsOpen = !notificationsOpen" aria-label="Notifications">
+                <i class="nc-icon nc-bell-55"></i>
+              </button>
+              <div class="absolute right-0 mt-3 w-72 paper-card p-4 text-sm shadow-lg" x-show="notificationsOpen" x-transition>
+                <p class="paper-label">Notifications</p>
+                <div class="mt-3 space-y-3">
+                  <p class="text-xs text-[var(--paper-muted)]">No new notifications.</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative" @click.outside="profileMenuOpen = false">
+              <button class="flex items-center gap-3 rounded-full bg-white/70 px-2 py-1 shadow" type="button" @click="profileMenuOpen = !profileMenuOpen">
+                {% if user.avatar_url %}
+                <img src="{{ user.avatar_url }}" alt="{{ user.username }}" class="h-8 w-8 rounded-full object-cover">
+                {% else %}
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--paper-sidebar)] text-white">
+                  <i class="nc-icon nc-single-02 text-sm"></i>
+                </div>
+                {% endif %}
+                <span class="hidden text-sm font-semibold md:inline">{{ user.username|default:user.email }}</span>
+                <i class="nc-icon nc-minimal-down text-xs text-[var(--paper-muted)]"></i>
+              </button>
+              <div class="absolute right-0 mt-3 w-44 paper-card p-3 text-sm shadow-lg" x-show="profileMenuOpen" x-transition>
+                <a href="{% url 'profile' %}" class="block rounded-lg px-2 py-1 hover:bg-[rgba(0,0,0,0.04)]">Profile</a>
+                <a href="{% url 'preferences' %}" class="block rounded-lg px-2 py-1 hover:bg-[rgba(0,0,0,0.04)]">Preferences</a>
+                <a href="{% url 'account_logout' %}" class="block rounded-lg px-2 py-1 hover:bg-[rgba(0,0,0,0.04)]">Logout</a>
+              </div>
+            </div>
+            {% else %}
+            <a href="{% url 'account_login' %}" class="paper-btn paper-btn-primary">Sign in with GitHub</a>
+            {% endif %}
+          </div>
+        </div>
+      </header>
+      <main id="main-content" class="flex-1 px-6 pb-12">
+        {% if messages %}
+        <div class="mb-6 space-y-2">
+          {% for message in messages %}
+          <div class="paper-card p-4 {% if message.tags == 'error' %}border-l-4 border-[var(--paper-danger)]{% elif message.tags == 'success' %}border-l-4 border-[var(--paper-success)]{% elif message.tags == 'warning' %}border-l-4 border-[var(--paper-warning)]{% else %}border-l-4 border-[var(--paper-info)]{% endif %}">
+            {{ message }}
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% block content %}{% endblock %}
+      </main>
+      <footer class="px-6 py-6 text-xs text-[var(--paper-muted)]">
+        <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+          <p>QuickGrade - GitHub & Taiga Analytics</p>
+          <div class="flex gap-4">
+            <a href="https://github.com/bmeddeb/QuickGrade" class="hover:text-[var(--paper-text)]" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  {% block extra_js %}{% endblock %}
+</body>
+</html>

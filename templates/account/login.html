@@ -1,0 +1,39 @@
+{% extends "base_auth.html" %}
+{% load static %}
+
+{% block title %}Sign In - QuickGrade{% endblock %}
+{% block page_id %}login{% endblock %}
+
+{% block content %}
+<div class="grid w-full gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+  <div class="flex flex-col justify-center gap-4">
+    <p class="paper-label">Welcome</p>
+    <h1 class="text-3xl font-semibold">Sign in to QuickGrade</h1>
+    <p class="text-sm text-[var(--paper-muted)]">Analyze GitHub repositories and Taiga projects with powerful dashboards and insights.</p>
+    <div class="flex flex-wrap gap-3">
+      <span class="paper-pill"><i class="nc-icon nc-check-2"></i>Commit analytics</span>
+      <span class="paper-pill"><i class="nc-icon nc-check-2"></i>PR tracking</span>
+      <span class="paper-pill"><i class="nc-icon nc-check-2"></i>Team insights</span>
+    </div>
+  </div>
+  <div class="paper-card p-6 shadow-[var(--paper-soft-shadow)]">
+    <div class="flex items-center justify-between">
+      <h2 class="text-xl font-semibold">Login</h2>
+      <span class="paper-badge paper-badge-info">GitHub</span>
+    </div>
+
+    <div class="mt-6 space-y-4">
+      <p class="text-sm text-[var(--paper-muted)]">Sign in with your GitHub account to access your repositories and start analyzing your team's contributions.</p>
+
+      <a href="{% url 'github_login' %}?next={{ request.GET.next|default:'/' }}" class="paper-btn paper-btn-primary w-full flex items-center justify-center gap-2">
+        <i class="fa fa-github text-lg"></i>
+        Sign in with GitHub
+      </a>
+
+      <p class="text-xs text-center text-[var(--paper-muted)]">
+        By signing in, you agree to grant QuickGrade read access to your repositories.
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

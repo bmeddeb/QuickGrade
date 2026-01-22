@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Profile - QuickGrade{% endblock %}
+{% block page_id %}profile{% endblock %}
+{% block header_subtitle %}Profile{% endblock %}
+
+{% block content %}
+<section class="pt-2">
+  <div>
+    <h1 class="text-2xl font-semibold">User Profile</h1>
+    <p class="text-sm text-[var(--paper-muted)]">Account settings and information</p>
+  </div>
+
+  <div class="mt-6 grid gap-6 lg:grid-cols-[1fr_2fr]">
+    <!-- Profile Card -->
+    <div class="paper-card p-6 text-center">
+      {% if user.avatar_url %}
+      <img src="{{ user.avatar_url }}" alt="{{ user.username }}" class="mx-auto h-20 w-20 rounded-full object-cover">
+      {% else %}
+      <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[var(--paper-sidebar)] text-white">
+        <i class="nc-icon nc-single-02 text-3xl"></i>
+      </div>
+      {% endif %}
+      <h2 class="mt-4 text-lg font-semibold">{{ user.username|default:user.email }}</h2>
+      <p class="text-sm text-[var(--paper-muted)]">{{ user.email }}</p>
+      {% if user.bio %}
+      <p class="mt-4 text-sm text-[var(--paper-muted)]">{{ user.bio }}</p>
+      {% endif %}
+      <div class="mt-4 flex items-center justify-center gap-3">
+        {% if user.github_id %}
+        <span class="paper-badge paper-badge-success">GitHub Connected</span>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Details Card -->
+    <div class="paper-card">
+      <div class="paper-card-header">
+        <p class="paper-label">Account Information</p>
+        <h2 class="text-lg font-semibold">User details</h2>
+      </div>
+      <div class="paper-card-body">
+        <div class="grid gap-4 md:grid-cols-2">
+          <div>
+            <label class="paper-label">Username</label>
+            <p class="mt-1 font-medium">{{ user.username|default:"—" }}</p>
+          </div>
+          <div>
+            <label class="paper-label">Email</label>
+            <p class="mt-1 font-medium">{{ user.email|default:"—" }}</p>
+          </div>
+          <div>
+            <label class="paper-label">GitHub ID</label>
+            <p class="mt-1 font-medium">{{ user.github_id|default:"—" }}</p>
+          </div>
+          <div>
+            <label class="paper-label">Member Since</label>
+            <p class="mt-1 font-medium">{{ user.date_joined|date:"F j, Y" }}</p>
+          </div>
+          <div>
+            <label class="paper-label">Last Login</label>
+            <p class="mt-1 font-medium">{{ user.last_login|date:"F j, Y, g:i a"|default:"Never" }}</p>
+          </div>
+          <div>
+            <label class="paper-label">First Name</label>
+            <p class="mt-1 font-medium">{{ user.first_name|default:"—" }}</p>
+          </div>
+        </div>
+        <div class="mt-6 flex justify-end gap-3">
+          <a href="{% url 'preferences' %}" class="paper-btn paper-btn-outline">Preferences</a>
+          <a href="{% url 'account_logout' %}" class="paper-btn paper-btn-danger">Sign Out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

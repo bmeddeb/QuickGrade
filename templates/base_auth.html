@@ -1,0 +1,50 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}QuickGrade{% endblock %}</title>
+  <link rel="icon" type="image/png" href="{% static 'img/favicon.ico' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/app.css' %}">
+  <link rel="stylesheet" href="{% static 'css/nucleo.css' %}">
+  <script defer src="{% static 'js/app.js' %}"></script>
+  <script defer src="{% static 'js/alpine.js' %}"></script>
+  {% block extra_head %}{% endblock %}
+</head>
+<body data-page="{% block page_id %}auth{% endblock %}" x-data="layout()" class="text-[var(--paper-text)] antialiased">
+  <a href="#main-content" class="paper-skip-link">Skip to content</a>
+  <div class="min-h-screen bg-[radial-gradient(circle_at_top,#ffffff_0%,#f6f1ea_45%,#f1eae0_100%)]">
+    <header class="px-6 py-5">
+      <div class="mx-auto flex w-full max-w-6xl items-center justify-between">
+        <a href="{% url 'home' %}" class="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em]">
+          <img src="{% static 'img/QuickGrade-logo.png' %}" alt="QuickGrade" class="h-10 w-10 rounded-full object-cover shadow">
+          QuickGrade
+        </a>
+        <div class="hidden items-center gap-3 md:flex">
+          {% block header_actions %}
+          <a href="{% url 'home' %}" class="paper-btn paper-btn-outline">Home</a>
+          {% endblock %}
+        </div>
+      </div>
+    </header>
+    <main id="main-content" class="mx-auto w-full max-w-6xl px-6 pb-12 pt-8">
+      {% if messages %}
+      <div class="mb-6 space-y-2">
+        {% for message in messages %}
+        <div class="paper-card p-4 {% if message.tags == 'error' %}border-l-4 border-[var(--paper-danger)]{% elif message.tags == 'success' %}border-l-4 border-[var(--paper-success)]{% else %}border-l-4 border-[var(--paper-info)]{% endif %}">
+          {{ message }}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+  {% block extra_js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "quickgrade",
+  "private": true,
+  "version": "1.0.0",
+  "description": "QuickGrade frontend tooling",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  },
+  "scripts": {
+    "build": "npx @tailwindcss/cli -c tailwind.config.js -i src/app.css -o static/css/app.css",
+    "watch": "npx @tailwindcss/cli -c tailwind.config.js -i src/app.css -o static/css/app.css --watch"
+  }
+}
